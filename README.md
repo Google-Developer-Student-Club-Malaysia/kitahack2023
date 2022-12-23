@@ -6,7 +6,8 @@ https://docs.google.com/document/d/1F0BEuXZAoYMqK8d15cJ8c7zGeEAWTDWQH4fM2cZC-Lc/
 
 ## Setup
 1. git clone https://github.com/Google-Developer-Student-Club-Malaysia/kitahack2023.git
-2. Open in code editor to edit
+2. npm install
+3. npm run watch
 
 
 ## Code of Conduct
@@ -23,3 +24,5 @@ https://docs.google.com/document/d/1F0BEuXZAoYMqK8d15cJ8c7zGeEAWTDWQH4fM2cZC-Lc/
 2. CSS (Vanilla + Tailwind)
 3. Javascript
 4. Git
+
+> Note: There's pre-ready components for standadization in html>components> dir
