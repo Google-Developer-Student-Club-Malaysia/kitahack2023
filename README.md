@@ -24,5 +24,6 @@ https://docs.google.com/document/d/1F0BEuXZAoYMqK8d15cJ8c7zGeEAWTDWQH4fM2cZC-Lc/
 2. CSS (Vanilla + Tailwind)
 3. Javascript
 4. Git
+5. npm & Node
 
 > Note: There's pre-ready components for standadization in html>components> dir
