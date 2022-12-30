@@ -8868,6 +8868,16 @@ html{
   margin-right: auto;
 }
 
+.my-24{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mr-3{
   margin-right: 0.75rem;
 }
@@ -8906,6 +8916,10 @@ html{
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mt-32{
+  margin-top: 8rem;
 }
 
 .ml-3{
@@ -9644,6 +9658,12 @@ html{
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -10260,6 +10280,11 @@ html{
   padding-bottom: 0.5rem;
 }
 
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -10298,8 +10323,8 @@ html{
   padding-right: 1rem;
 }
 
-.pl-2{
-  padding-left: 0.5rem;
+.pl-4{
+  padding-left: 1rem;
 }
 
 .pt-5{
@@ -10308,10 +10333,6 @@ html{
 
 .pt-2{
   padding-top: 0.5rem;
-}
-
-.pl-4{
-  padding-left: 1rem;
 }
 
 .text-left{
@@ -10894,11 +10915,9 @@ html{
 }
 
 .timeline .heading{
-  font-size: 35px;
-  color: #0023FF;
+  color: #000;
   position: relative;
   margin-bottom: 100px;
-  font-weight: 1000;
 }
 
 .heading::after{
@@ -10972,18 +10991,14 @@ html{
 }
 
 .ctitle{
-  color: #0023FF;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 1000;
 }
 
 ul li p{
-  font-size: 15px;
   text-align: justify;
-  color: #000;
   margin: 7px 0;
-  font-weight: 450;
   line-height: 23px;
 }
 
@@ -10997,8 +11012,6 @@ ul li .points{
   display: grid;
   place-items: center;
   color: #fff;
-  font-size: 15px;
-  font-weight: 500;
   box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
 }
 
@@ -11155,6 +11168,10 @@ ul li .bullet{
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover{
+  text-decoration-line: underline;
+}
+
 .table .hover\:hover:hovertr:hover th,
     .table .hover\:hover:hovertr:hover td,
     .table .hover\:hover:hovertr:nth-child(even):hover th,
@@ -11259,6 +11276,11 @@ ul li .bullet{
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-gray-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-blue-600{
   --tw-bg-opacity: 1;
   background-color: rgb(28 100 242 / var(--tw-bg-opacity));
@@ -11285,6 +11307,11 @@ ul li .bullet{
 .dark .dark\:text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .dark .dark\:text-blue-500{
@@ -11386,13 +11413,46 @@ ul li .bullet{
     }
   }
 
+  .sm\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm\:mt-0{
+    margin-top: 0px;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
   .sm\:h-9{
     height: 2.25rem;
+  }
+
+  .sm\:items-center{
+    align-items: center;
+  }
+
+  .sm\:justify-center{
+    justify-content: center;
+  }
+
+  .sm\:justify-between{
+    justify-content: space-between;
+  }
+
+  .sm\:p-6{
+    padding: 1.5rem;
   }
 
   .sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .sm\:text-center{
+    text-align: center;
   }
 
   .sm\:underline{
@@ -11427,10 +11487,6 @@ ul li .bullet{
 
   .md\:flex-row{
     flex-direction: row;
-  }
-
-  .md\:items-center{
-    align-items: center;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]){
@@ -11500,6 +11556,11 @@ ul li .bullet{
 }
 
 @media (min-width: 1024px){
+  .lg\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .lg\:w-\[450px\]{
     width: 450px;
   }
