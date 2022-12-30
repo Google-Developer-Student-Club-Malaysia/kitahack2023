@@ -1,96 +1,238 @@
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/icons/dsc_logo.ico" type="image/x-icon">
-    <title>DSC Kitahack 2023</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./img/icons/dsc_logo.ico" type="image/x-icon">
+        <title>DSC Kitahack 2023</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" src="css/style.css">
-    <link rel="stylesheet" href="css/tailwind.css">
+        <!-- CSS -->
+        <link rel="stylesheet" src="css/style.css">
+        <link rel="stylesheet" href="css/tailwind.css">
 
-    <!-- JS -->
-    <script src="js/dark-light-switcher.js"></script>
-</head>
+        <!-- JS -->
+        <script src="js/dark-light-switcher.js"></script>
+        <script src="js/sponsor-tab-switcher.js" defer></script>
+    </head>
 
-<body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
-    <!-- Navbar -->
-    <nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded navbar">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="" class="flex items-center">
-            <img src="./img/dsc_logo.svg" class="h-6 mr-3 sm:h-9" alt="DSC Logo" />
-            <span class="text-black self-center text-xl font-semibold whitespace-nowrap dark:text-white">DSC Kitahack</span>
-        </a>
-        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-            </li>
-            <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Event <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+    <body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
+        <!-- Navbar -->
+        <nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded navbar">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+                <a href="" class="flex items-center">
+                    <img src="./img/dsc_logo.svg" class="h-6 mr-3 sm:h-9" alt="DSC Logo" />
+                    <span class="text-black self-center text-xl font-semibold whitespace-nowrap dark:text-white">DSC Kitahack</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="./html/demo-day.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Demo Day</a>
+                            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="./html/design-day.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Design Day</a>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Event <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                </svg></button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="./html/demo-day.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Demo Day</a>
+                                    </li>
+                                    <li>
+                                        <a href="./html/design-day.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Design Day</a>
+                                    </li>
+                                    <li>
+                                        <a href="./html/workshop.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Workshops</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-                            <a href="./html/workshop.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Workshops</a>
+                            <a href="mailto:dscmykita@gmail.com" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
                         </li>
-                        </ul>
-                    </div>
-                </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="theme-toggle" type="button" class="ml-2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- SDG Details -->
+        <div class="container mt-20 mx-auto px-10 flex flex-col items-center lg:flex-row text-gray-700 dark:text-gray-400">
+            <h1 class="font-bold text-3xl md:text-5xl lg:min-w-[450px]">What is <br> Sustainable Development Goals?</h1>
+
+            <ul class="pt-5 lg:pl-10 lg:pt-0">
                 <li>
-                    <a href="mailto:dscmykita@gmail.com" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    In 2015, the United Nations created 17 Sustainable Development Goals and aimed to achieve them by 2030. All 193 United Nations Member States agreed on these 17 goals to end poverty, ensure prosperity, and protect the planet.
                 </li>
-                </ul>
+                <br>
+                <li>
+                    For KitaHack & 2023 Solution Challenge, your mission is to create a project that contributes to solving one or more of the 17 Sustainable Development Goals using Google technologies.
+                </li>
+                <br>
+                <li>
+                    For KitaHack & 2023 Solution Challenge, your mission is to create a project that contributes to solving one or more of the 17 Sustainable Development Goals using Google technologies.
+                </li>
+                <br>
+                <li>
+                    For KitaHack & 2023 Solution Challenge, your mission is to create a project that contributes to solving one or more of the 17 Sustainable Development Goals using Google technologies.
+                </li>
+            </ul>
+        </div>
+
+        <!-- SDG Videos -->
+        <div class="container mt-20 mx-auto px-10 flex flex-col lg:flex-row gap-8 justify-center items-center">
+            <iframe class="rounded-md w-[266.67px] h-[150px] md:w-[560px] md:h-[315px]" width="560" height="315" src="https://www.youtube-nocookie.com/embed/0XTBYMfZyrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="rounded-md w-[266.67px] h-[150px] md:w-[560px] md:h-[315px]" src="https://www.youtube-nocookie.com/embed/xVWHuJOmaEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Sponsor Logo -->
+        <div class="container px-10 mx-auto mt-20 flex flex-col items-center lg:flex-row">
+            <div class="lg:w-[450px]">
+                <h1 class="font-bold text-3xl md:text-5xl">Sponsorships</h1>
+                <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam, consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem, laborum labore vero nostrum amet!</p>
             </div>
+
+            <div class="flex flex-col pt-5 lg:pl-10 lg:pt-0 gap-8 mx-auto items-center text-gray-700 dark:text-gray-400">
+                <!-- Tabs -->
+                <div class="tabs tabs-boxed flex flex-row flex-wrap justify-center max-w-md">
+                    <a class="tab tab-active duration-100 ease-in" onclick="activate(event, '#diamond_sponsor')">Diamond</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#platinum_sponsor')">Platinum</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#gold_sponsor')">Gold</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#silver_sponsor')">Silver</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#bronze_sponsor')">Bronze</a>
+                </div>
+
+                <!-- Content -->
+                <div id="diamond_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="platinum_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="gold_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">GDSC Monash University Malaysia</p>
+                            <small>Kind sponsor and venue sponsor</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/sponsors/GDSC_Monash_University_Horizontal.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="silver_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bronze_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="./img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button
-                id="theme-toggle"
-                type="button"
-                class="ml-2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
-            >
-            <svg
-                id="theme-toggle-dark-icon"
-                class="w-5 h-5 hidden"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-            </svg>
-            <svg
-                id="theme-toggle-light-icon"
-                class="w-5 h-5 hidden"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <path
-                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                ></path>
-            </svg>
-        </button>
-    </nav>
-</body>
+        </div>
+
+        <footer class="mt-20"></footer>
+    </body>
 
 </html>
