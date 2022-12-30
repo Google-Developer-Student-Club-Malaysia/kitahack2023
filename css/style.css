@@ -17,11 +17,9 @@
 }
 
 .timeline .heading{
-    font-size: 35px;
-    color: #0023FF;
+    color: #000;
     position: relative;
     margin-bottom: 100px;
-    font-weight: 1000;
 }
 
 .heading::after{
@@ -95,18 +93,14 @@
 }
 
 .ctitle{
-    color: #0023FF;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 1000;
 }
 
 ul li p{
-    font-size: 15px;
     text-align: justify;
-    color: #000;
     margin: 7px 0;
-    font-weight: 450;
     line-height: 23px;
 }
 
@@ -120,8 +114,6 @@ ul li .points{
     display: grid;
     place-items: center;
     color: #fff;
-    font-size: 15px;
-    font-weight: 500;
     box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
 }
 
