@@ -17,10 +17,12 @@
     <!-- CSS -->
     <link rel="stylesheet" src="../css/style.css">
     <link rel="stylesheet" href="../css/tailwind.css">
+    <link rel="stylesheet" href="../css/android.css">
 
     <!-- JS -->
     <script src="../js/dark-light-switcher.js"></script>
     <script src="../js/sponsor-tab-switcher.js" defer></script>
+    <script src="../js/android.js"></script>
 </head>
 
 <body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
@@ -132,7 +134,18 @@
         </button>
     </nav>
 
-    
+    <!-- Countdown Timer -->
+    <div class="countdown_container">
+        <h1 id="headline">Event starts in</h1>
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+      </div>
 
     <!-- Footer -->
     <footer class="p-4 sm:p-6">
