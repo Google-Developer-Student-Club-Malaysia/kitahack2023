@@ -106,36 +106,39 @@
 
 
     <!-- Countdown Section -->
-    <section class="container mt-20 px-10 mx-auto">
-        <h2 class="text-center pb-4 text-5xl"></h2>
-        <div class="container flex flex-row gap-5 text-center auto-cols-max justify-center">
+    <section class="container mx-auto h-72 p-7 bg-center bg-no-repeat bg-cover"
+        style="background-image: url(img/countdown_background.svg)">
+        <h2 class="text-center pb-4 text-3xl md:text-4xl font-medium text-gray-700 dark:text-white">Days until
+            Demo-day
+        </h2>
+        <div class="flex flex-row gap-5 text-center auto-cols-max justify-center">
             <div
-                class="flex flex-col py-4 px-16 bg-google-red dark:bg-neutral rounded-box text-white dark:text-neutral-content">
-                <span class="countdown font-mono text-6xl countdown-days">
+                class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-red dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center aspect-video p-1 sm:p-4">
+                <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
                     <span id="days" style="--value:15;"></span>
                 </span>
-                <span class="text-lg">days</span>
+                <span class="text-md sm:text-xl font-medium">days</span>
             </div>
             <div
-                class="flex flex-col py-4 px-16 bg-google-blue dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center">
-                <span class="countdown font-mono text-6xl countdown-hours">
+                class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-blue dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
                     <span id="hours" style="--value:10;"></span>
                 </span>
-                <span class="text-lg">hours</span>
+                <span class="text-md sm:text-xl font-medium">hours</span>
             </div>
             <div
-                class="flex flex-col py-4 px-16 bg-google-green dark:bg-neutral rounded-box text-white dark:text-neutral-content">
-                <span class="countdown font-mono text-6xl countdown-minutes">
+                class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-green dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
                     <span id="minutes" style="--value:24;"></span>
                 </span>
-                <span class="text-lg">minutes</span>
+                <span class="text-md sm:text-xl font-medium">minutes</span>
             </div>
             <div
-                class="flex flex-col py-4 px-16 bg-google-orange dark:bg-neutral rounded-box text-white dark:text-neutral-content">
-                <span class="countdown font-mono text-6xl countdown-seconds">
+                class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-orange dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
                     <span id="seconds" style="--value:29;"></span>
                 </span>
-                <span class="text-lg">seconds</span>
+                <span class="text-md sm:text-xl font-medium">seconds</span>
             </div>
         </div>
     </section>
