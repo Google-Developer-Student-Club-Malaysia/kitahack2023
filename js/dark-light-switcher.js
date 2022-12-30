@@ -22,9 +22,11 @@ function darkLightSwitch() {
         if (localStorage.getItem('color-theme')) {
             if (localStorage.getItem('color-theme') === 'light') {
                 document.documentElement.classList.add('dark');
+                document.documentElement.setAttribute("data-theme", "dark")
                 localStorage.setItem('color-theme', 'dark');
             } else {
                 document.documentElement.classList.remove('dark');
+                document.documentElement.setAttribute("data-theme", "light")
                 localStorage.setItem('color-theme', 'light');
             }
 
@@ -32,9 +34,11 @@ function darkLightSwitch() {
         } else {
             if (document.documentElement.classList.contains('dark')) {
                 document.documentElement.classList.remove('dark');
+                document.documentElement.setAttribute("data-theme", "light")
                 localStorage.setItem('color-theme', 'light');
             } else {
                 document.documentElement.classList.add('dark');
+                document.documentElement.setAttribute("data-theme", "dark")
                 localStorage.setItem('color-theme', 'dark');
             }
         }
