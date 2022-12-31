@@ -196,17 +196,17 @@ ul li .bullet{
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 560px) {
     .tcontainer {
         width: 80%;
     }
 
     .tcontainer ul::after {
-        left: -20px;
+        left: -30px;
     }
 
     .tcontainer ul li .circle {
-        left: -20px;
+        left: -50px;
     }
 }
 
