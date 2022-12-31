@@ -8878,6 +8878,16 @@ html{
   margin-bottom: 1.5rem;
 }
 
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-32{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
 .mr-3{
   margin-right: 0.75rem;
 }
@@ -9042,12 +9052,12 @@ html{
   height: 1.25rem;
 }
 
-.h-\[150px\]{
-  height: 150px;
-}
-
 .h-72{
   height: 18rem;
+}
+
+.h-\[150px\]{
+  height: 150px;
 }
 
 .h-9{
@@ -9656,12 +9666,12 @@ html{
   gap: 0.25rem;
 }
 
-.gap-8{
-  gap: 2rem;
-}
-
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]){
@@ -10297,10 +10307,6 @@ html{
   padding: 1rem;
 }
 
-.p-2\.5{
-  padding: 0.625rem;
-}
-
 .p-7{
   padding: 1.75rem;
 }
@@ -10313,9 +10319,9 @@ html{
   padding: 0px;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-2\.5{
@@ -10375,12 +10381,12 @@ html{
   padding-left: 1rem;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
-}
-
 .pb-4{
   padding-bottom: 1rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .pt-2{
@@ -11183,10 +11189,6 @@ ul li .bullet{
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-inherit:hover{
-  background-color: inherit;
-}
-
 .hover\:bg-transparent:hover{
   background-color: transparent;
 }
@@ -11371,14 +11373,14 @@ ul li .bullet{
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.dark .dark\:text-gray-200{
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
 .dark .dark\:text-neutral-content{
   --tw-text-opacity: 1;
   color: hsl(var(--nc) / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .dark .dark\:text-blue-500{
@@ -11561,12 +11563,12 @@ ul li .bullet{
     width: auto;
   }
 
-  .md\:w-\[560px\]{
-    width: 560px;
-  }
-
   .md\:w-1\/6{
     width: 16.666667%;
+  }
+
+  .md\:w-\[560px\]{
+    width: 560px;
   }
 
   .md\:flex-row{
@@ -11596,6 +11598,11 @@ ul li .bullet{
     padding-right: 0.5rem;
   }
 
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -11604,11 +11611,6 @@ ul li .bullet{
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-  
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:font-medium{
