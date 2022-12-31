@@ -9030,6 +9030,10 @@ html{
   display: none;
 }
 
+.aspect-video{
+  aspect-ratio: 16 / 9;
+}
+
 .h-6{
   height: 1.5rem;
 }
@@ -9040,6 +9044,10 @@ html{
 
 .h-\[150px\]{
   height: 150px;
+}
+
+.h-72{
+  height: 18rem;
 }
 
 .h-9{
@@ -9442,6 +9450,10 @@ html{
 .break-after-column{
   -moz-column-break-after: column;
        break-after: column;
+}
+
+.auto-cols-max{
+  grid-auto-columns: max-content;
 }
 
 .grid-flow-row{
@@ -10102,6 +10114,26 @@ html{
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
 }
 
+.bg-google-red{
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 56 53 / var(--tw-bg-opacity));
+}
+
+.bg-google-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 128 232 / var(--tw-bg-opacity));
+}
+
+.bg-google-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 156 85 / var(--tw-bg-opacity));
+}
+
+.bg-google-orange{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 171 0 / var(--tw-bg-opacity));
+}
+
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -10155,6 +10187,10 @@ html{
           box-decoration-break: clone;
 }
 
+.bg-cover{
+  background-size: cover;
+}
+
 .bg-fixed{
   background-attachment: fixed;
 }
@@ -10182,6 +10218,10 @@ html{
 .bg-clip-text{
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .bg-repeat{
@@ -10257,17 +10297,25 @@ html{
   padding: 1rem;
 }
 
-.p-0{
-  padding: 0px;
+.p-2\.5{
+  padding: 0.625rem;
+}
+
+.p-7{
+  padding: 1.75rem;
 }
 
 .p-1{
   padding: 0.25rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.p-0{
+  padding: 0px;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-2\.5{
@@ -10329,6 +10377,10 @@ html{
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .pt-2{
@@ -10404,6 +10456,11 @@ html{
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-lg{
@@ -11276,6 +11333,11 @@ ul li .bullet{
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-neutral{
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--n) / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -11312,6 +11374,11 @@ ul li .bullet{
 .dark .dark\:text-gray-200{
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-neutral-content{
+  --tw-text-opacity: 1;
+  color: hsl(var(--nc) / var(--tw-text-opacity));
 }
 
 .dark .dark\:text-blue-500{
@@ -11430,6 +11497,10 @@ ul li .bullet{
     height: 2.25rem;
   }
 
+  .sm\:w-1\/4{
+    width: 25%;
+  }
+
   .sm\:items-center{
     align-items: center;
   }
@@ -11440,6 +11511,10 @@ ul li .bullet{
 
   .sm\:justify-between{
     justify-content: space-between;
+  }
+
+  .sm\:p-4{
+    padding: 1rem;
   }
 
   .sm\:p-6{
@@ -11453,6 +11528,11 @@ ul li .bullet{
 
   .sm\:text-center{
     text-align: center;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .sm\:underline{
@@ -11483,6 +11563,10 @@ ul li .bullet{
 
   .md\:w-\[560px\]{
     width: 560px;
+  }
+
+  .md\:w-1\/6{
+    width: 16.666667%;
   }
 
   .md\:flex-row{
@@ -11520,6 +11604,11 @@ ul li .bullet{
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+  
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:font-medium{
@@ -11579,6 +11668,11 @@ ul li .bullet{
 
   .lg\:pt-0{
     padding-top: 0px;
+  }
+
+  .lg\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .table .dark .dark\:lg\:hovertr:hover th,
