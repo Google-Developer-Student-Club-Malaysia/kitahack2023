@@ -21,6 +21,9 @@
 </head>
 
 <body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
+    <!-- Pre-Loader -->
+    <div id="preloader"></div>
+
     <!-- Navbar -->
     <nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded navbar">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
@@ -91,6 +94,131 @@
             </svg>
         </button>
     </nav>
+
+    <!-- Hero -->
+    <!-- Note: add this for smaller hero section-->
+    <div class="container px-6 py-16 mx-auto"> 
+    <div class="px-6 py-12 lg:my-12 md:px-12 text-gray-800 text-center lg:text-left">
+        <div class="container mx-auto xl:px-32">
+            <div class="grid lg:grid-cols-2 gap-12 flex items-center">
+            <!-- Content -->
+            <div class="mt-12 lg:mt-0">
+                <h1 id="hero_title" class="text-5xl md:text-6xl xl:text-6xl font-bold tracking-tight mb-6">DSC Kita Hack 2023</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">KitaHack is a 2-day hackathon that is organised by Google Developer Student Clubs Malaysia (GDSC Malaysia).</p>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">The event date is 11th - 12th March 2023.</p>
+                <br/>
+                <!-- Button -->
+                <a id="hero_button" href="#" class="h-14 btn border-white relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
+                    <span class="relative flex px-5 py-3.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                        Register Now! 
+                        <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd">
+                            </path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <!-- Image -->
+            <div class="mb-12 lg:mb-0">
+                <img
+                src="./img/gsc_home_hero_logo.png"
+                class="w-full rounded-lg shadow-2xl shadow-gray-900 dark:shadow-gray-400"
+                alt=""
+                />
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Hero -->
+          
+    <!-- FAQ -->
+    <section class="relative pt-24 pb-28 bg-blueGray-50 overflow-hidden">
+    <img class="absolute bottom-0 left-1/2 transform -translate-x-1/2" src="flaro-assets/images/faqs/gradient.svg" alt="">
+        <div class="relative z-10 container px-4 mx-auto">
+            <div class="md:max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl xl:text-6xl text-center font-bold tracking-tight mb-6">Frequently Asked Questions</h1>
+                <p class=" mb-6 font-light text-gray-500 text-center pb-3 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">The most common questions about DSC Kita Hack 2023.</p>
+            <!-- <h2 class="mb-16 text-6xl md:text-8xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none">Frequently Asked Questions</h2> -->
+            
+                <div class="pb-3">
+                    <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box hover:border-[#EA4335] border-2">
+                        <div class="py-6 px-8 collapse-title text-xl font-semibold leading-normal">
+                            Can I solo team?
+                        </div>
+                        <div class="px-8 collapse-content text-gray-600 font-medium"> 
+                            <p>You can. However, if you want to find members to form a team, you can do so at our Discord server here *link*</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-3">
+                    <div tabindex="1" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box hover:border-[#4285F4] border-2">
+                        <div class="py-6 px-8 collapse-title text-xl font-semibold leading-normal">
+                            I am a beginner. Can I participate?
+                        </div>
+                        <div class="px-8 collapse-content text-gray-600 font-medium"> 
+                            <p>Yeshhh</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pb-3">
+                    <div tabindex="2" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box hover:border-[#34A853] border-2">
+                        <div class="py-6 px-8 collapse-title text-xl font-semibold leading-normal">
+                            Who owns the app/solution?
+                        </div>
+                        <div class="px-8 collapse-content text-gray-600 font-medium"> 
+                            <p>You</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-3">
+                    <div tabindex="3" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box hover:border-[#FBBC04] border-2">
+                        <div class="py-6 px-8 collapse-title text-xl font-semibold leading-normal">
+                            Can I pick a solution outside the scope of 17 SDGs?
+                        </div>
+                        <div class="px-8 collapse-content text-gray-600 font-medium"> 
+                            <p>??? (for GSC, no you are required to pick a theme inside 17 SDGs)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-3">
+                    <div tabindex="4" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box hover:border-[#EA4335] border-2">
+                        <div class="py-6 px-8 collapse-title text-xl font-semibold leading-normal">
+                            What happens after KitaHack?
+                        </div>
+                        <div class="px-8 collapse-content text-gray-600 font-medium"> 
+                            <p>Refine and improve your solutions for 2023 Solution Challenge</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-3">
+                    <div tabindex="5" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box hover:border-[#4285F4] border-2">
+                        <div class="py-6 px-8 collapse-title text-xl font-semibold leading-normal">
+                            Can I participate in multiple teams?
+                        </div>
+                        <div class="px-8 collapse-content text-gray-600 font-medium"> 
+                            <p>No you cannot, each student can only be a part of one submission</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- End FAQ -->
+
+    <!-- JavaScript for Pre-Loader -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"; 
+            document.body.style.overflow = "unset";
+        })
+    </script>
 </body>
 
 </html>
