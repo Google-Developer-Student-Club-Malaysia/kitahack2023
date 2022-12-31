@@ -9073,6 +9073,10 @@ html{
   height: 150px;
 }
 
+.h-\[14px\]{
+  height: 14px;
+}
+
 .h-9{
   height: 2.25rem;
 }
@@ -9697,6 +9701,10 @@ html{
   gap: 1.25rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .gap-8{
   gap: 2rem;
 }
@@ -10213,6 +10221,10 @@ html{
   --tw-bg-opacity: 0.5;
 }
 
+.bg-\[url\(\'\.\.\/img\/banners\/solutionchallenge-2022-chapterevents-banner-sm\.png\'\)\]{
+  background-image: url('../img/banners/solutionchallenge-2022-chapterevents-banner-sm.png');
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -10235,6 +10247,10 @@ html{
 
 .bg-cover{
   background-size: cover;
+}
+
+.bg-contain{
+  background-size: contain;
 }
 
 .bg-fixed{
@@ -10410,6 +10426,11 @@ html{
   padding-right: 1.25rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pl-3{
   padding-left: 0.75rem;
 }
@@ -10428,6 +10449,10 @@ html{
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .pt-2{
@@ -11430,6 +11455,10 @@ ul li .bullet{
   --tw-bg-opacity: 0.8;
 }
 
+.dark .dark\:bg-none{
+  background-image: none;
+}
+
 .dark .dark\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -11636,6 +11665,10 @@ ul li .bullet{
     height: 315px;
   }
 
+  .md\:h-\[20px\]{
+    height: 20px;
+  }
+
   .md\:w-auto{
     width: auto;
   }
@@ -11666,6 +11699,10 @@ ul li .bullet{
     background-color: transparent;
   }
 
+  .md\:bg-\[url\(\'\.\.\/img\/banners\/solutionchallenge-2022-chapterevents-banner-md\.png\'\)\]{
+    background-image: url('../img/banners/solutionchallenge-2022-chapterevents-banner-md.png');
+  }
+
   .md\:p-0{
     padding: 0px;
   }
@@ -11673,6 +11710,31 @@ ul li .bullet{
   .md\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:py-1{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
 
   .md\:text-4xl{
@@ -11741,12 +11803,37 @@ ul li .bullet{
     flex-direction: row;
   }
 
+  .lg\:flex-col{
+    flex-direction: column;
+  }
+
+  .lg\:gap-4{
+    gap: 1rem;
+  }
+
+  .lg\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .lg\:bg-\[url\(\'\.\.\/img\/banners\/solutionchallenge-2022-chapterevents-banner-lg\.png\'\)\]{
+    background-image: url('../img/banners/solutionchallenge-2022-chapterevents-banner-lg.png');
+  }
+
+  .lg\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:pl-10{
     padding-left: 2.5rem;
   }
 
   .lg\:pt-0{
     padding-top: 0px;
+  }
+
+  .lg\:text-left{
+    text-align: left;
   }
 
   .lg\:text-7xl{

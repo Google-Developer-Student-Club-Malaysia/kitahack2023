@@ -14,6 +14,14 @@
         <!-- CSS -->
         <link rel="stylesheet" src="../css/style.css">
         <link rel="stylesheet" href="../css/tailwind.css">
+        <style>
+            .banner {
+                background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/banners/solutionchallenge-2022-chapterevents-banner-lg.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+        </style>
 
         <!-- JS -->
         <script src="../js/dark-light-switcher.js" defer></script>
@@ -159,34 +167,104 @@
         </nav>
         <!-- END of Navbar -->
 
-        <!-- SDG Details -->
-        <div class="container my-24 mx-auto px-20 flex flex-col items-center lg:flex-row text-gray-700 dark:text-gray-400">
-            <div class="lg:w-[450px] lg:min-w-[450px]">
-                <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Title</h1>
-                <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam, consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem, laborum labore vero nostrum amet!</p>
-            </div>
+        <!-- Details -->
+        <div class="banner py-10 lg:py-18 dark:bg-none">
+            <div class="container my-24 mx-auto px-20 flex flex-col items-center lg:flex-row text-white dark:text-gray-400">
+                <div class="lg:w-[450px] lg:min-w-[450px]">
+                    <a target="_blank" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session">
+                        <h1 class="flex flex-col font-bold text-3xl md:text-5xl dark:text-white">
+                            <span>
+                                Google Solution Challenge 2023
+                            </span>
+                            <span>
+                                Info Session
+                                <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                                </svg>
+                            </span>
+                        </h1>
+                    </a>
+                    <p class="mt-5">
+                        Monash University Malaysia
+                    </p>
+                </div>
 
-            <ul class="pt-5 lg:pl-10 lg:pt-0">
-                <li>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque totam est reprehenderit fugiat exercitationem minus aut vitae, culpa dicta perspiciatis autem iusto, laudantium cumque repudiandae iste accusantium, qui voluptatem sit!
-                </li>
-                <br>
-                <li>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque totam est reprehenderit fugiat exercitationem minus aut vitae, culpa dicta perspiciatis autem iusto, laudantium cumque repudiandae iste accusantium, qui voluptatem sit!
-                </li>
-                <br>
-                <li>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque totam est reprehenderit fugiat exercitationem minus aut vitae, culpa dicta perspiciatis autem iusto, laudantium cumque repudiandae iste accusantium, qui voluptatem sit!
-                </li>
-                <br>
-                <li>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque totam est reprehenderit fugiat exercitationem minus aut vitae, culpa dicta perspiciatis autem iusto, laudantium cumque repudiandae iste accusantium, qui voluptatem sit!
-                </li>
-            </ul>
+                <ul class="flex flex-col gap-2 pt-5 lg:pl-10 lg:pt-0 lg:gap-4">
+                    <li class="text-justify lg:text-left">
+                        💡New event on the way!! 💡
+                    </li>
+                    <li class="text-justify lg:text-left">
+                        Each year, Google Developer Student Clubs around the world take on the Google Solution Design Challenge and rise to the occasion. The mission of the 2023 Solution Challenge is to solve one or more of the UN 17 Sustainable Development Goals. Join GDSC MUM to take part in this journey in collaboration with other GDSC Chapters around Malaysia!!
+                    </li>
+                    <li class="text-justify lg:text-left">
+                        We also have a special upcoming event just to help you on your journey for the Google Solutions Challenge, join us to find out!
+                    </li>
+                    <li class="text-justify lg:text-left">
+                        Tune into our info sessions to learn more!
+                    </li>
+                    <li class="flex flex-row flex-wrap gap-8 justify-center lg:flex-col lg:gap-2">
+                        <span>🗓️ Date: 4/1/2023 (Wed)</span>
+                        <span>⏰ Time: 7:00pm - 8:00pm</span>
+                        <span>📍 Venue: Zoom</span>
+                    </li>
+                </ul>
+            </div>
         </div>
 
+        <!-- Organisers -->
+        <h1 class="font-bold text-3xl md:text-5xl mt-20 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
+        <section class="w-full flex flex-wrap justify-center items-center pt-10 px-4">
+            <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
+                <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
+                    <img class="w-full" src="../img/organisers/russell_kong.webp" alt="">
+                </div>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Russell Kong</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">GDSC Lead</p>
+                <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mppxhu/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
+            </div>
+
+            <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
+                <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
+                    <img class="w-full" src="../img/organisers/regan_tan.webp" alt="">
+                </div>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Regen Tan</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Co-Lead</p>
+                <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mpak77/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
+            </div>
+
+            <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
+                <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
+                    <img class="w-full" src="../img/organisers/zhi_tee.webp" alt="">
+                </div>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Zhi Tee</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Operations Lead</p>
+                <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m9exgy/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
+            </div>
+        </section>
+
         <!-- Sponsor Logo -->
-        <div class="container  mt-20 px-20 mx-auto flex flex-col items-center lg:flex-row">
+        <section class="container mt-20 px-20 mx-auto flex flex-col items-center lg:flex-row">
             <div class="lg:w-[450px]">
                 <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Sponsorships</h1>
                 <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam, consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem, laborum labore vero nostrum amet!</p>
@@ -250,11 +328,11 @@
                 <div id="gold_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
                     <div>
                         <div class="mb-2">
-                            <p class="text-md">GDSC Monash University Malaysia</p>
-                            <small>Kind sponsor and venue sponsor</small>
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
                         </div>
                         <div class="min-h-[106.66px]">
-                            <img src="../img/sponsors/GDSC_Monash_University_Horizontal.png" alt="" class="max-w-xs rounded-md">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
                         </div>
                     </div>
 
@@ -313,7 +391,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Footer -->
         <footer class="p-4 sm:p-6">
