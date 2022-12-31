@@ -5,6 +5,11 @@ module.exports = {
   theme: {
     extend: {},
   },
+  variants: {
+    extend: {
+      visibility: ["group-hover"],
+    }
+  },
   plugins: [
     require("tailwindcss"),
     require("flowbite/plugin"),
