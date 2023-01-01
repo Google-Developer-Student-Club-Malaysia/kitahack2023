@@ -7,6 +7,34 @@
     font-family: "Roboto";
 }
 
+/* Color gradient for text */
+#hero_title {
+    background-image: linear-gradient(120deg, #4285f4, #34a853, #fbbc04, #ea4335); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hero_button {
+    background: linear-gradient(120deg, #4285f4, #34a853, #fbbc04, #ea4335); 
+}
+
+/* Pre-loader */
+#preloader {
+    background: #000 url(/img/google_developers_preloader.gif) no-repeat center center; 
+    background-size: 100%; 
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100%; 
+    width: 100%; 
+    position: fixed; 
+    z-index: 100; 
+}
+
+body {
+    overflow: hidden;
+}
+
 /* Landing page Submission Criteria */
 .timeline{
     width: 100%;
