@@ -9011,20 +9011,20 @@ html{
   margin-top: 2.5rem;
 }
 
-.mt-3{
-  margin-top: 0.75rem;
-}
-
-.mb-1{
-  margin-bottom: 0.25rem;
+.mt-8{
+  margin-top: 2rem;
 }
 
 .ml-10{
   margin-left: 2.5rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
+.mb-40{
+  margin-bottom: 10rem;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
 }
 
 .box-border{
@@ -9225,10 +9225,6 @@ html{
 
 .max-w-4xl{
   max-width: 56rem;
-}
-
-.max-w-3xl{
-  max-width: 48rem;
 }
 
 .flex-1{
@@ -10345,16 +10341,6 @@ html{
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-neutral{
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--n) / var(--tw-bg-opacity));
-}
-
-.bg-blue-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 66 159 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -10363,9 +10349,19 @@ html{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .from-red-200{
   --tw-gradient-from: #FBD5D5;
   --tw-gradient-to: rgb(251 213 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#78C257\]{
+  --tw-gradient-from: #78C257;
+  --tw-gradient-to: rgb(120 194 87 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -10376,6 +10372,10 @@ html{
 
 .to-yellow-200{
   --tw-gradient-to: #FCE96A;
+}
+
+.to-\[\#24A0ED\]{
+  --tw-gradient-to: #24A0ED;
 }
 
 .decoration-slice{
@@ -12243,6 +12243,11 @@ ul li .bullet{
 
   .xl\:text-6xl{
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:text-7xl{
+    font-size: 4.5rem;
     line-height: 1;
   }
 }
