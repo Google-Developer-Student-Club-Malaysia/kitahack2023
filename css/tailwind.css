@@ -8911,6 +8911,11 @@ html{
   margin-bottom: 1.5rem;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mr-3{
   margin-right: 0.75rem;
 }
@@ -9011,20 +9016,20 @@ html{
   margin-top: 2.5rem;
 }
 
-.mt-3{
-  margin-top: 0.75rem;
-}
-
-.mb-1{
-  margin-bottom: 0.25rem;
+.mt-8{
+  margin-top: 2rem;
 }
 
 .ml-10{
   margin-left: 2.5rem;
 }
 
-.mt-8{
-  margin-top: 2rem;
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .box-border{
@@ -9225,10 +9230,6 @@ html{
 
 .max-w-4xl{
   max-width: 56rem;
-}
-
-.max-w-3xl{
-  max-width: 48rem;
 }
 
 .flex-1{
@@ -10343,16 +10344,6 @@ html{
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-neutral{
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--n) / var(--tw-bg-opacity));
-}
-
-.bg-blue-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 66 159 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50{
