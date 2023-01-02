@@ -21,6 +21,12 @@
                 background-repeat: no-repeat;
             }
 
+            .chapter-image {
+                background: url('../img/chapters/GDSC_Monash_University_Horizontal.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
         </style>
 
         <!-- JS -->
@@ -167,52 +173,65 @@
         </nav>
         <!-- END of Navbar -->
 
-        <!-- Details -->
-        <div class="banner py-10 lg:py-18 dark:bg-none">
-            <div class="container my-24 mx-auto px-20 flex flex-col items-center lg:flex-row text-white dark:text-gray-400">
-                <div class="lg:w-[450px] lg:min-w-[450px]">
-                    <a target="_blank" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session">
-                        <h1 class="flex flex-col font-bold text-3xl text-center md:text-5xl dark:text-white">
-                            <span>
-                                Google Solution Challenge 2023
-                            </span>
-                            <span>
-                                Info Session
-                                <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
-                                </svg>
-                            </span>
-                        </h1>
-                    </a>
-                    <p class="text-center mt-5">
-                        Monash University Malaysia
-                    </p>
-                </div>
-
-                <ul class="flex flex-col gap-2 pt-5 lg:pl-10 lg:pt-0 lg:gap-4">
-                    <li class="text-justify lg:text-left">
-                        💡New event on the way!! 💡
-                    </li>
-                    <li class="text-justify lg:text-left">
-                        Each year, Google Developer Student Clubs around the world take on the Google Solution Design Challenge and rise to the occasion. The mission of the 2023 Solution Challenge is to solve one or more of the UN 17 Sustainable Development Goals. Join GDSC MUM to take part in this journey in collaboration with other GDSC Chapters around Malaysia!!
-                    </li>
-                    <li class="text-justify lg:text-left">
-                        We also have a special upcoming event just to help you on your journey for the Google Solutions Challenge, join us to find out!
-                    </li>
-                    <li class="text-justify lg:text-left">
-                        Tune into our info sessions to learn more!
-                    </li>
-                    <li class="flex flex-row flex-wrap gap-8 justify-center lg:flex-col lg:gap-2">
-                        <span>🗓️ Date: 4/1/2023 (Wed)</span>
-                        <span>⏰ Time: 7:00pm - 8:00pm</span>
-                        <span>📍 Venue: Zoom</span>
-                    </li>
-                </ul>
+        <!-- Hero -->
+        <div class="container mx-auto my-20 px-10 md:px-20 flex flex-col items-center lg:flex-row dark:text-gray-400">
+            <div class="lg:w-[450px] lg:min-w-[450px]">
+                <a target="_blank" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session">
+                    <h1 class="flex flex-col font-bold text-3xl md:text-5xl dark:text-white">
+                        <span>
+                            Google Solution Challenge 2023
+                        </span>
+                        <span>
+                            Info Session
+                            <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                            </svg>
+                        </span>
+                    </h1>
+                </a>
+            </div>
+            <div class="mt-5 lg:mt-0">
+                <img src="../img/banners/solutionchallenge-2022-chapterevents-banner-lg.png" alt="" class="rounded-md">
             </div>
         </div>
 
+        <!-- Chapters -->
+        <div class="container mx-auto px-auto flex flex-row flex-wrap gap-4 justify-center">
+            <picture>
+                <source srcset="../img/chapters/GDSC_Malaysia_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
+                <img src="../img/chapters/GDSC_Malaysia_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
+            </picture>
+            <picture>
+                <source srcset="../img/chapters/GDSC_Monash_University_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
+                <img src="../img/chapters/GDSC_Monash_University_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
+            </picture>
+        </div>
+
+        <!-- Details -->
+        <section class="container my-24 mx-auto flex flex-col items-center lg:flex-row text-gray-700 dark:text-gray-400">
+            <h1 class="font-bold text-3xl text-center md:text-5xl lg:min-w-[450px] dark:text-white">What is <br> Info Session?</h1>
+
+            <ul class="flex flex-col gap-3 pt-5 lg:pl-10 lg:mr-12 lg:pt-0 lg:gap-4">
+                <li class="text-justify lg:text-left">
+                    Each year, Google Developer Student Clubs around the world take on the Google Solution Design Challenge and rise to the occasion. The mission of the 2023 Solution Challenge is to solve one or more of the UN 17 Sustainable Development Goals. Join GDSC MUM to take part in this journey in collaboration with other GDSC Chapters around Malaysia!!
+                </li>
+                <li class="text-justify lg:text-left">
+                    We also have a special upcoming event just to help you on your journey for the Google Solutions Challenge, join us to find out!
+                </li>
+                <li class="text-justify lg:text-left">
+                    Tune into our info sessions to learn more!
+                </li>
+                <br>
+                <li class="flex flex-row flex-wrap gap-3 justify-center lg:flex-col lg:gap-2">
+                    <span>🗓️ Date: 4/1/2023 (Wed)</span>
+                    <span>⏰ Time: 7:00pm - 8:00pm</span>
+                    <span>📍 Venue: Zoom</span>
+                </li>
+            </ul>
+        </section>
+
         <!-- Organisers -->
-        <h1 class="font-bold text-3xl md:text-5xl mt-20 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
+        <h1 class="font-bold text-3xl md:text-5xl mt-10 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
         <section class="w-full flex flex-wrap justify-center items-center pt-10 px-4">
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
@@ -264,7 +283,7 @@
         </section>
 
         <!-- Sponsor Logo -->
-        <section class="container mt-20 px-5 mx-auto flex flex-col items-center md:px-20 lg:flex-row">
+        <section class="container mt-20 px-5 mx-auto flex flex-col items-center md:px-10 lg:flex-row">
             <div class="lg:w-[450px]">
                 <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Sponsorships</h1>
                 <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam, consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem, laborum labore vero nostrum amet!</p>
@@ -421,12 +440,12 @@
                 </div>
             </div>
         </footer>
-        
+
         <!-- JavaScript for Pre-Loader -->
         <script>
             var loader = document.getElementById("preloader");
-            window.addEventListener("load", function(){
-                loader.style.display = "none"; 
+            window.addEventListener("load", function () {
+                loader.style.display = "none";
                 document.body.style.overflow = "unset";
             })
         </script>
