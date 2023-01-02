@@ -45,7 +45,6 @@ body {
 }
 
 .timeline .heading{
-    color: #000;
     position: relative;
     margin-bottom: 100px;
 }
@@ -54,10 +53,11 @@ body {
     content: " ";
     position: absolute;
     width: 50%;
-    height: 3px;
+    height: 5px;
     left: 50%;
-    bottom: -5px;
+    bottom: -15px;
     transform: translateX(-50%);
+    border-radius: 20px;
     background-image: linear-gradient(to right, #00f260, #0575e6);
 }
 
@@ -236,6 +236,18 @@ ul li .bullet{
     .tcontainer ul li .circle {
         left: -50px;
     }
+}
+
+.judges::after {
+    content: " ";
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    left: 50%;
+    bottom: -15px;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to right, #00f260, #0575e6);
 }
 
 /* Index Page */
