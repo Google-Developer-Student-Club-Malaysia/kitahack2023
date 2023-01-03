@@ -45,7 +45,7 @@
     margin-bottom: 100px;
 }
 
-.heading::after{
+/* .heading::after{
     content: " ";
     position: absolute;
     width: 50%;
@@ -54,7 +54,7 @@
     bottom: -5px;
     transform: translateX(-50%);
     background-image: linear-gradient(to right, #00f260, #0575e6);
-}
+} */
 
 .tcontainer{
     width: 70%;
