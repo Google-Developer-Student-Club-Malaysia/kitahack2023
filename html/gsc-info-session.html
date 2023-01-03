@@ -70,12 +70,12 @@
                     <div class="hidden w-full md:block md:w-auto">
                         <ul class="flex flex-row space-x-8 p-4 font-medium text-sm bg-gray-50 rounded-lg dark:bg-gray-800 md:dark:bg-gray-900">
                             <li>
-                                <a href="/kitahack2023/" class="block text-blue-700 rounded dark:text-white" aria-current="page">Home</a>
+                                <a href="/kitahack2023/" class="block rounded hover:text-blue-700" aria-current="page">Home</a>
                             </li>
 
                             <!-- Event Menu Dropdown -->
-                            <li class="dropdown dropdown-bottom dropdown-end block hover:cursor-pointer hover:bg-gray-100 hover:bg-inherit dark:text-gray-400 dark:hover:bg-gray-900" tabindex="0">
-                                <label class="hover:cursor-pointer dark:hover:text-white" tabindex="0">
+                            <li class="dropdown dropdown-bottom dropdown-end block hover:cursor-pointer hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-900" tabindex="0">
+                                <label class="text-blue-700 hover:cursor-pointer dark:text-white" tabindex="0">
                                     Event
                                     <svg class="inline-block w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -84,7 +84,7 @@
 
                                 <ul tabindex="0" class="dropdown-content menu bg-white rounded shadow w-44 mt-5 dark:bg-gray-700">
                                     <li class="dark:hover:text-white"><a href="/kitahack2023/html/demo-day.html">Demo Day</a></li>
-                                    <li class="dark:hover:text-white"><a href="/kitahack2023/html/gsc-info-session.html">Google Solution Challenge 2023 Info Session</a></li>
+                                    <li><a href="/kitahack2023/html/gsc-info-session.html" class="text-blue-700 dark:text-white">Google Solution Challenge 2023 Info Session</a></li>
                                     <li class="dark:hover:text-white"><a href="/kitahack2023/html/sc-kickoff.html">2023 Solution Challenge Kickoff Event</a></li>
 
                                     <!-- Workshop Menu Dropdown -->
@@ -176,7 +176,7 @@
         <!-- Hero -->
         <div class="container mx-auto my-20 px-10 md:px-20 flex flex-col items-center lg:flex-row dark:text-gray-400">
             <div class="lg:w-[450px] lg:min-w-[450px]">
-                <a target="_blank" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session">
+                <a target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session">
                     <h1 class="flex flex-col font-bold text-3xl md:text-5xl dark:text-white">
                         <span>
                             Google Solution Challenge 2023
@@ -201,10 +201,12 @@
                 <source srcset="../img/chapters/GDSC_Malaysia_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
                 <img src="../img/chapters/GDSC_Malaysia_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
             </picture>
-            <picture>
-                <source srcset="../img/chapters/GDSC_Monash_University_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
-                <img src="../img/chapters/GDSC_Monash_University_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
-            </picture>
+            <a href="https://gdsc.community.dev/monash-university-malaysia/" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source srcset="../img/chapters/GDSC_Monash_University_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
+                    <img src="../img/chapters/GDSC_Monash_University_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
+                </picture>
+            </a>
         </div>
 
         <!-- Details -->
@@ -240,7 +242,7 @@
                 <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Russell Kong</p>
                 <p class="text-gray-700 font-normal dark:text-gray-400">GDSC Lead</p>
                 <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
-                    <a target="_blank" href="https://gdsc.community.dev/u/mppxhu/" class="flex flex-row gap-2 items-center">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mppxhu/" rel="noopener noreferrer" class="flex flex-row gap-2 items-center">
                         <span>View Profile</span>
                         <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
@@ -256,7 +258,7 @@
                 <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Regen Tan</p>
                 <p class="text-gray-700 font-normal dark:text-gray-400">Co-Lead</p>
                 <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
-                    <a target="_blank" href="https://gdsc.community.dev/u/mpak77/" class="flex flex-row gap-2 items-center">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mpak77/" rel="noopener noreferrer" class="flex flex-row gap-2 items-center">
                         <span>View Profile</span>
                         <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
@@ -272,7 +274,7 @@
                 <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Zhi Tee</p>
                 <p class="text-gray-700 font-normal dark:text-gray-400">Operations Lead</p>
                 <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
-                    <a target="_blank" href="https://gdsc.community.dev/u/m9exgy/" class="flex flex-row gap-2 items-center">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m9exgy/" rel="noopener noreferrer" class="flex flex-row gap-2 items-center">
                         <span>View Profile</span>
                         <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />

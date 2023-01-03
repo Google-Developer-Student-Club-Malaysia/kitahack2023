@@ -8896,11 +8896,6 @@ html{
   margin-bottom: 1.5rem;
 }
 
-.mx-20{
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
 .my-20{
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -8974,20 +8969,16 @@ html{
   margin-top: 5rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
 
 .mb-1{
   margin-bottom: 0.25rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
 }
 
 .box-border{
@@ -9118,20 +9109,8 @@ html{
   height: 1rem;
 }
 
-.h-\[200px\]{
-  height: 200px;
-}
-
-.h-full{
-  height: 100%;
-}
-
 .min-h-\[106\.66px\]{
   min-height: 106.66px;
-}
-
-.min-h-full{
-  min-height: 100%;
 }
 
 .w-5{
@@ -9174,14 +9153,6 @@ html{
   width: 1rem;
 }
 
-.w-\[600px\]{
-  width: 600px;
-}
-
-.w-\[400px\]{
-  width: 400px;
-}
-
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -9192,14 +9163,6 @@ html{
 
 .max-w-xs{
   max-width: 20rem;
-}
-
-.max-w-lg{
-  max-width: 32rem;
-}
-
-.max-w-xl{
-  max-width: 36rem;
 }
 
 .flex-1{
@@ -10547,11 +10510,6 @@ html{
   padding-right: 2rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
@@ -11528,6 +11486,11 @@ ul li .bullet{
   background-color: rgb(30 66 159 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-50:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover{
   font-weight: 700;
 }
@@ -11714,10 +11677,6 @@ ul li .bullet{
 
 .dark .dark\:bg-none{
   background-image: none;
-}
-
-.dark .dark\:bg-\[url\(\'\.\.\/img\/chapters\/GDSC_Monash_University_Transparent_Horizontal\.png\'\)\]{
-  background-image: url('../img/chapters/GDSC_Monash_University_Transparent_Horizontal.png');
 }
 
 .dark .dark\:text-white{
@@ -11914,10 +11873,6 @@ ul li .bullet{
 }
 
 @media (min-width: 768px){
-  .md\:mt-0{
-    margin-top: 0px;
-  }
-
   .md\:block{
     display: block;
   }
@@ -11952,18 +11907,6 @@ ul li .bullet{
 
   .md\:max-w-md{
     max-width: 28rem;
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
-  }
-
-  .md\:items-center{
-    align-items: center;
-  }
-
-  .md\:justify-center{
-    justify-content: center;
   }
 
   .md\:p-0{
@@ -12066,14 +12009,6 @@ ul li .bullet{
 
   .lg\:flex-col{
     flex-direction: column;
-  }
-
-  .lg\:items-end{
-    align-items: flex-end;
-  }
-
-  .lg\:justify-end{
-    justify-content: flex-end;
   }
 
   .lg\:gap-4{
