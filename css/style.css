@@ -31,6 +31,17 @@
     z-index: 100; 
 }
 
+.disappear {
+    animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 body {
     overflow: hidden;
 }
