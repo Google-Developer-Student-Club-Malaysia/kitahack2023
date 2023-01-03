@@ -35,6 +35,7 @@
         <!-- JS -->
         <script src="../js/dark-light-switcher.js" defer></script>
         <script src="../js/sponsor-tab-switcher.js" defer></script>
+        <script src="../js/android-workshop-kdu-countdown.js"></script>
     </head>
 
     <body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
@@ -242,6 +243,42 @@
         </div>
 
         <!-- Countdown -->
+        <section class="container mt-32 mb-16 mx-auto h-72 p-7 bg-center bg-no-repeat bg-cover sm:mb-6"
+            style="background-image: url(../img/countdown_background.svg)">
+            <h2 class="text-center pb-4 text-3xl md:text-4xl font-medium text-gray-700 dark:text-white">Days until Workshop</h2>
+            <div class="flex flex-row gap-5 text-center auto-cols-max justify-center">
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-red dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center aspect-video p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="days" style="--value:15;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">days</span>
+                </div>
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-blue dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="hours" style="--value:10;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">hours</span>
+                </div>
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-green dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="minutes" style="--value:24;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">minutes</span>
+                </div>
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-orange dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="seconds" style="--value:29;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">seconds</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organisers -->
 
         <!-- Footer -->
         <footer class="p-4 sm:p-6">
