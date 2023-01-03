@@ -11,7 +11,6 @@
 #hero_title {
     background-image: linear-gradient(120deg, #4285f4, #34a853, #fbbc04, #ea4335); 
     background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 #hero_button {
@@ -20,7 +19,7 @@
 
 /* Pre-loader */
 #preloader {
-    background: #FCFCFF url(/img/google_developers_preloader.gif) no-repeat center center; 
+    background: #FCFCFF url(/kitahack2023/img/google_developers_preloader.gif) no-repeat center center; 
     background-size: 60%; 
     /* background-position: center;
     background-repeat: no-repeat;
@@ -41,11 +40,6 @@
         visibility: hidden;
     }
 }
-
-body {
-    overflow: hidden;
-}
-
 /* Landing page Submission Criteria */
 .timeline{
     width: 100%;
@@ -61,7 +55,7 @@ body {
     margin-bottom: 100px;
 }
 
-.heading::after{
+/* .heading::after{
     content: " ";
     position: absolute;
     width: 50%;
@@ -70,7 +64,7 @@ body {
     bottom: -5px;
     transform: translateX(-50%);
     background-image: linear-gradient(to right, #00f260, #0575e6);
-}
+} */
 
 .tcontainer{
     width: 70%;
