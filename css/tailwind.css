@@ -10906,11 +10906,6 @@ html{
   color: rgb(51 102 153 / .35);
 }
 
-.text-gray-400{
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
 .underline{
   text-decoration-line: underline;
 }
@@ -11615,11 +11610,6 @@ ul li .bullet{
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
@@ -11870,14 +11860,6 @@ ul li .bullet{
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.table .dark .dark\:hovertr:hover th,
-    .table .dark .dark\:hovertr:hover td,
-    .table .dark .dark\:hovertr:nth-child(even):hover th,
-    .table .dark .dark\:hovertr:nth-child(even):hover td{
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
-}
-
 .dark .dark\:hover\:border-white:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -11910,11 +11892,6 @@ ul li .bullet{
 .dark .dark\:hover\:bg-gray-800:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:hover\:bg-white:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:hover\:text-white:hover{
