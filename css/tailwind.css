@@ -11221,10 +11221,6 @@ html{
   z-index: 100;
 }
 
-body {
-  /* overflow: hidden; */
-}
-
 /* Landing page Submission Criteria */
 
 .timeline{
@@ -11514,6 +11510,11 @@ ul li .bullet{
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .hover\:text-blue-600:hover{
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
@@ -11522,11 +11523,6 @@ ul li .bullet{
 .hover\:text-gray-600:hover{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -11757,6 +11753,11 @@ ul li .bullet{
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.dark .dark\:hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .dark .dark\:hover\:text-blue-500:hover{
   --tw-text-opacity: 1;
   color: rgb(63 131 248 / var(--tw-text-opacity));
@@ -11765,11 +11766,6 @@ ul li .bullet{
 .dark .dark\:hover\:text-gray-300:hover{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.dark .dark\:hover\:text-black:hover{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .dark .dark\:focus\:ring-gray-700:focus{
