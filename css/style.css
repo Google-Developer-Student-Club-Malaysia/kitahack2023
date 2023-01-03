@@ -7,6 +7,29 @@
     font-family: "Roboto";
 }
 
+/* Color gradient for text */
+#hero_title {
+    background-image: linear-gradient(120deg, #4285f4, #34a853, #fbbc04, #ea4335); 
+    background-clip: text;
+}
+
+#hero_button {
+    background: linear-gradient(120deg, #4285f4, #34a853, #fbbc04, #ea4335); 
+}
+
+/* Pre-loader */
+#preloader {
+    background: #FCFCFF url(/kitahack2023/img/google_developers_preloader.gif) no-repeat center center; 
+    background-size: 60%; 
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100%; 
+    width: 100%; 
+    position: fixed; 
+    z-index: 100; 
+}
+
 /* Landing page Submission Criteria */
 .timeline{
     width: 100%;
@@ -22,7 +45,7 @@
     margin-bottom: 100px;
 }
 
-.heading::after{
+/* .heading::after{
     content: " ";
     position: absolute;
     width: 50%;
@@ -31,7 +54,7 @@
     bottom: -5px;
     transform: translateX(-50%);
     background-image: linear-gradient(to right, #00f260, #0575e6);
-}
+} */
 
 .tcontainer{
     width: 70%;
@@ -76,7 +99,7 @@
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
     position: relative;
     margin-bottom: 30px;
-    z-index: 99;
+    z-index: 20;
 }
 
 .tcontainer ul li:nth-child(odd){
@@ -196,17 +219,17 @@ ul li .bullet{
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 560px) {
     .tcontainer {
         width: 80%;
     }
 
     .tcontainer ul::after {
-        left: -20px;
+        left: -30px;
     }
 
     .tcontainer ul li .circle {
-        left: -20px;
+        left: -50px;
     }
 }
 
