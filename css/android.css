@@ -1,0 +1,48 @@
+/* general styling */
+.countdown_container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.countdown_container > h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+.countdown_container li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.countdown_container li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+.emoji {
+    display: none;
+    padding: 1rem;
+}
+
+.emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+    .countdown_container h1 {
+        font-size: calc(1.5rem * var(--smaller));
+    }
+
+    #countdown li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    .countdown_container li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
