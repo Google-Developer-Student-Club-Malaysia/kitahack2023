@@ -953,11 +953,12 @@
         <!-- JavaScript for Pre-Loader -->
         <script>
             var loader = document.getElementById("preloader");
-            setTimeout(function () {
+            var runLoader = setTimeout(function () {
                 loader.classList.add("disappear");     
             }, 300); 
             window.addEventListener("load", function(){
                 document.body.style.overflow = "unset";
+                clearTimeout(runLoader);
             })
         </script>
     </body>
