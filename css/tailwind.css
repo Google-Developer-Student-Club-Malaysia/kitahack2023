@@ -9032,10 +9032,6 @@ html{
   margin-top: 8rem;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -9134,6 +9130,10 @@ html{
 
 .aspect-video{
   aspect-ratio: 16 / 9;
+}
+
+.aspect-square{
+  aspect-ratio: 1 / 1;
 }
 
 .h-6{
@@ -10333,6 +10333,11 @@ html{
   background-color: rgb(63 131 248 / var(--tw-bg-opacity));
 }
 
+.bg-yellow-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 120 3 / var(--tw-bg-opacity));
+}
+
 .bg-base-100{
   --tw-bg-opacity: 1;
   background-color: hsl(var(--b1) / var(--tw-bg-opacity));
@@ -10644,11 +10649,6 @@ html{
   padding-bottom: 0.25rem;
 }
 
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
@@ -10682,6 +10682,10 @@ html{
   padding-top: 1.25rem;
 }
 
+.pt-10{
+  padding-top: 2.5rem;
+}
+
 .pt-24{
   padding-top: 6rem;
 }
@@ -10692,10 +10696,6 @@ html{
 
 .pb-3{
   padding-bottom: 0.75rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
 }
 
 .pt-2{
@@ -11587,6 +11587,11 @@ ul li .bullet{
   border-width: 2px;
 }
 
+.hover\:border-yellow-700:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(142 75 16 / var(--tw-border-opacity));
+}
+
 .hover\:border-blue-700:hover{
   --tw-border-opacity: 1;
   border-color: rgb(26 86 219 / var(--tw-border-opacity));
@@ -11658,6 +11663,11 @@ ul li .bullet{
 .hover\:text-blue-700:hover{
   --tw-text-opacity: 1;
   color: rgb(26 86 219 / var(--tw-text-opacity));
+}
+
+.hover\:text-yellow-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(194 120 3 / var(--tw-text-opacity));
 }
 
 .hover\:text-blue-500:hover{
@@ -12319,16 +12329,16 @@ ul li .bullet{
     margin-right: 3rem;
   }
 
-  .lg\:mr-10{
-    margin-right: 2.5rem;
-  }
-
   .lg\:mt-8{
     margin-top: 2rem;
   }
 
   .lg\:mb-10{
     margin-bottom: 2.5rem;
+  }
+
+  .lg\:mr-10{
+    margin-right: 2.5rem;
   }
 
   .lg\:flex{
@@ -12404,12 +12414,6 @@ ul li .bullet{
   .lg\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .mockup-phone .lg\:display{
-    overflow: hidden;
-    border-radius: 40px;
-    margin-top: -25px;
   }
 
   .lg\:stats-horizontal{
