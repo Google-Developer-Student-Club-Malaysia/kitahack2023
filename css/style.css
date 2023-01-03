@@ -30,6 +30,16 @@
     z-index: 100; 
 }
 
+.disappear {
+    animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 /* Landing page Submission Criteria */
 .timeline{
     width: 100%;
@@ -40,21 +50,9 @@
 }
 
 .timeline .heading{
-    color: #000;
     position: relative;
     margin-bottom: 100px;
 }
-
-/* .heading::after{
-    content: " ";
-    position: absolute;
-    width: 50%;
-    height: 3px;
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50%);
-    background-image: linear-gradient(to right, #00f260, #0575e6);
-} */
 
 .tcontainer{
     width: 70%;

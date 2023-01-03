@@ -28,6 +28,7 @@
         <!-- JS -->
         <script src="../js/dark-light-switcher.js" defer></script>
         <script src="../js/sponsor-tab-switcher.js" defer></script>
+        <script src="../js/flutter-workshop-monash.js"></script>
     </head>
 
     <body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
@@ -171,11 +172,322 @@
         </nav>
         <!-- END of Navbar -->
 
+        <!-- Hero -->
+        <div class="container mx-auto my-20 flex flex-col items-center lg:flex-row dark:text-gray-400 px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-5xl">
+            <div class="lg:w-[350px] lg:min-w-[550px]">
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session">
+                    <h1 class="flex flex-col font-bold text-3xl md:text-5xl dark:text-white">
+                        <span>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0032FF] to-[#24A0ED]">Flutter</span>
+                            and <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0032FF] to-[#24A0ED]">Flask</span>
+                        </span>
+                        <span>
+                            Workshop Series by <br/>Monash University
+                            <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                            </svg>
+                        </span>
+                    </h1>
+                    <li class="mt-10 text-lg font-bold hidden lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
+                        <span>🗓️ Date: 4/1/2023 (Wed)</span>
+                        <span>⏰ Time: 7:00pm - 8:00pm</span>
+                        <span>📍 Venue: Zoom</span>
+                    </li>
+                    <button class="lg:mt-8 lg:mb-10 bg-gradient-to-r from-[#0032FF] to-[#24A0ED] text-white font-semibold py-4 px-6 rounded shadow hover:border-2 border-blue-600 hover:from-white hover:to-white hover:text-[#0032FF] transition duration-300 ease-in-out hover:scale-110 invisible lg:visible">
+                        RSVP Now
+                    </button>
+                </a>
+            </div>
+            <div class="mb-12 lg:mb-0">
+                <img src="../img/flutter_flask_logo.png" class="p-8 w-full rounded-lg shadow-2xl" alt="" />
+            </div>
+        </div>
+
+        <!-- Chapters -->
+        <div class="container mx-auto px-auto flex flex-row flex-wrap gap-4 justify-center">
+            <picture>
+                <source srcset="../img/chapters/GDSC_Malaysia_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
+                <img src="../img/chapters/GDSC_Malaysia_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
+            </picture>
+            <a href="https://gdsc.community.dev/monash-university-malaysia/" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source srcset="../img/chapters/GDSC_Monash_University_Transparent_Horizontal.png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../img/chapters/GDSC_Monash_University_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
+                </picture>
+            </a>
+        </div>
+
+        <!-- Countdown -->
+        <section class="container mt-32 mb-16 mx-auto h-72 p-7 bg-center bg-no-repeat bg-cover sm:mb-6"
+            style="background-image: url(../img/countdown_background.svg)">
+            <h2 class="text-center pb-4 text-3xl md:text-4xl font-medium text-gray-700 dark:text-white">Days until Workshop</h2>
+            <div class="flex flex-row gap-5 text-center auto-cols-max justify-center">
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-red dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center aspect-video p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="days" style="--value:15;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">days</span>
+                </div>
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-blue dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="hours" style="--value:10;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">hours</span>
+                </div>
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-green dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="minutes" style="--value:24;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">minutes</span>
+                </div>
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-orange dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="seconds" style="--value:29;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">seconds</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details -->
+        <section class="container my-24 mx-auto flex flex-col items-center lg:flex-row text-gray-700 dark:text-gray-400 px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-5xl">
+            <h1 class="font-bold text-3xl text-center md:text-5xl lg:min-w-[550px] dark:text-white">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0032FF] to-[#24A0ED]">Flutter</span> & <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0032FF] to-[#24A0ED]">Flask</span><br>Workshop Series
+            </h1>
+        
+            <ul class="flex flex-col gap-3 pt-5 lg:pl-10 lg:mr-12 lg:pt-0 lg:gap-4">
+                <li class="text-justify lg:mr-10">
+                    🚀 Dive into our second workshop series 🚀
+                </li>
+                <li class="text-justify lg:mr-10">
+                    This workshop aims to introduce app development to participants by creating an interactive Flutter
+                    application during the session that runs on iOS and Android alongside with Flask....
+                </li>
+                <li class="text-justify lg:mr-10">
+                    Come and join us in this workshop where you will learn all about Flutter and Flask where you will be
+                    given hands on lab practice during the workshop!
+                </li>
+                <br>
+                <li class="flex flex-col flex-wrap gap-3 justify-center lg:flex-col lg:gap-2">
+                    <span>🗓️ Date: 4/1/2023 (Wed)</span>
+                    <span>⏰ Time: 7:00pm - 8:00pm</span>
+                    <span>📍 Venue: Zoom</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Organisers -->
+        <h1 class="font-bold text-3xl md:text-5xl mt-20 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
+        <section class="w-full flex flex-wrap justify-center items-center pt-10 px-4">
+            <div
+                class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
+                <div
+                    class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
+                    <img class="w-full" src="../img/organisers/russell_kong.webp" alt="">
+                </div>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Russell Kong</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">GDSC Lead</p>
+                <button
+                    class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mppxhu/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
+            </div>
+        
+            <div
+                class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
+                <div
+                    class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
+                    <img class="w-full" src="../img/organisers/regan_tan.webp" alt="">
+                </div>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Regen Tan</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Co-Lead</p>
+                <button
+                    class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mpak77/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
+            </div>
+        
+            <div
+                class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
+                <div
+                    class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
+                    <img class="w-full" src="../img/organisers/zhi_tee.webp" alt="">
+                </div>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Zhi Tee</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Operations Lead</p>
+                <button
+                    class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m9exgy/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
+            </div>
+        </section>
+
+        <!-- Sponsor Logo -->
+        <section class="container mt-20 mx-auto flex flex-col items-center lg:flex-row px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-5xl">
+            <div class="lg:w-[450px]">
+                <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Sponsorships</h1>
+                <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam,
+                    consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem,
+                    laborum labore vero nostrum amet!</p>
+            </div>
+        
+            <div class="flex flex-col pt-5 lg:pl-10 lg:pt-0 gap-8 mx-auto items-center text-gray-700 dark:text-gray-400">
+                <!-- Tabs -->
+                <div class="tabs tabs-boxed flex flex-row flex-wrap justify-center max-w-md">
+                    <a class="tab tab-active duration-100 ease-in" onclick="activate(event, '#diamond_sponsor')">Diamond</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#platinum_sponsor')">Platinum</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#gold_sponsor')">Gold</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#silver_sponsor')">Silver</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#bronze_sponsor')">Bronze</a>
+                </div>
+        
+                <!-- Content -->
+                <div id="diamond_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="platinum_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="gold_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="silver_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="bronze_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="p-4 sm:p-6">
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between px-10">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">GDSC Malaysia™</a>. All Rights Reserved.
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">GDSC Malaysia™</a>. All Rights Reserved.
                 </span>
                 <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                     <a href="https://www.facebook.com/dscmalaysiakita/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
