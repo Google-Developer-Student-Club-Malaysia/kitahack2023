@@ -30,7 +30,17 @@
     z-index: 100; 
 }
 
-/* Submission Criteria */
+.disappear {
+    animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/* Landing page Submission Criteria */
 .timeline{
     width: 100%;
     height: auto;
