@@ -175,43 +175,41 @@
         <!-- Hero -->
         <!-- Reference: https://tailwind-elements.com/snippets/tailwind/tailwindelements/3578672#html-tab-view -->
         <section class="mb-40">
-        
-            <div class="px-6 py-12 md:px-12 text-center lg:text-left">
+            <div class="px-6 py-12 md:px-12 text-gray-800 text-center lg:text-left dark:text-white">
                 <div class="container mx-auto xl:px-32">
-                    <div class="grid lg:grid-cols-2 gap-12 flex items-center">
-                        <div class="mt-12 lg:mt-0">
-                            <a target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session/">
-                                <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#78C257] to-[#24A0ED]">
-                                    Android Workshop
-                                    <br/>
-                                    <span class="text-white text-3xl mb-12">By KDU
-                                        <svg class="inline-block ml-2 mb-1 h-[14px] md:h-[20px] hover:scale-110" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                            class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
-                                        </svg>
-                                    </span>
-                                </h1>
-                                
-                            </a>
-                            <li class="mt-10 text-lg font-bold hidden lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
+                  <div class="grid lg:grid-cols-2 gap-12 flex items-center">
+                    <div class="mt-12 lg:mt-0">
+                        <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#78C257] to-[#24A0ED]">Android Workshop <br /></h1>
+                        <span class="text-3xl font-bold mb-12 ">By KDU</span>
+                        <br/>
+                        
+                        <ul class="list_none mt-10 dark:text-gray-400">
+                            <li class="text-lg font-bold lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
                                 <span>🗓️ Date: 6/2/2023 (Monday)</span>
+                            </li>
+                            <li class="text-lg font-bold lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
                                 <span>⏰ Time: 8:00pm - 9:00pm</span>
-                                <span>📍 Venue: Zoom</span>
-                            </li> 
-                            <a class="inline-flex mt-10" href>
-                                <button class="h-12 flex items-center justify-center uppercase font-semibold px-8 rounded bg-gradient-to-r from-[#78C257] to-[#2dd4bf] shadow-md text-white hover:bg-[#78C257] hover:text-white hover:scale-110 hover:shadow-xl transition duration-500 ease-in-out">
-                                    RSVP Now!
-                                <button/>
-                            </a>
-                        </div>
-                        <div class="mb-12 lg:mb-0">
-                            <img src="../img/android_logo_green.png"
-                                class="w-full rounded-lg shadow-2xl" alt="" />
-                        </div>
+                                
+                            </li>
+                            <li class="text-lg font-bold lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
+                                <span>📍 Venue: Zoom</span> 
+                            </li>
+                            
+                        </ul>
+                        
+                        <a class="inline-flex mt-10" href>
+                            <button class="h-12 flex items-center justify-center uppercase font-semibold px-8 rounded bg-gradient-to-r from-[#78C257] to-[#2dd4bf] shadow-md text-white hover:bg-[#78C257] hover:text-white hover:scale-110 hover:shadow-xl transition duration-500 ease-in-out">
+                                RSVP Now!
+                            <button/>
+                        </a>
                     </div>
+                    <div class="mb-12 lg:mb-0 bg-blue-500 rounded-lg shadow-2xl">
+                        <img src="../img/android_logo_green.png"
+                            class="w-full rounded-lg shadow-2xl" alt="" />
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
         </section>
         <!-- END of Hero->
 
@@ -358,6 +356,139 @@
         </section>
         <!-- END of Organisers -->
 
+        <!-- Sponsors -->
+        <!-- Sponsor Logo -->
+        <section class="container mt-20 mx-auto flex flex-col items-center lg:flex-row px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-5xl">
+            <div class="lg:w-[450px]">
+                <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Sponsorships</h1>
+                <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam,
+                    consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem,
+                    laborum labore vero nostrum amet!</p>
+            </div>
+        
+            <div class="flex flex-col pt-5 lg:pl-10 lg:pt-0 gap-8 mx-auto items-center text-gray-700 dark:text-gray-400">
+                <!-- Tabs -->
+                <div class="tabs tabs-boxed flex flex-row flex-wrap justify-center max-w-md">
+                    <a class="tab tab-active duration-100 ease-in" onclick="activate(event, '#diamond_sponsor')">Diamond</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#platinum_sponsor')">Platinum</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#gold_sponsor')">Gold</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#silver_sponsor')">Silver</a>
+                    <a class="tab duration-100 ease-in" onclick="activate(event, '#bronze_sponsor')">Bronze</a>
+                </div>
+        
+                <!-- Content -->
+                <div id="diamond_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="platinum_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="gold_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="silver_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="bronze_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="mb-2">
+                            <p class="text-md">Sponsor Name</p>
+                            <small>Subtitle</small>
+                        </div>
+                        <div class="min-h-[106.66px]">
+                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END of Sponsors -->
 
         <!-- Footer -->
         <footer class="p-4 sm:p-6">
