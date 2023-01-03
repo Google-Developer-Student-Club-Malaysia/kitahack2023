@@ -8911,19 +8911,9 @@ html{
   margin-bottom: 1.5rem;
 }
 
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-2{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mr-3{
@@ -10564,6 +10554,10 @@ html{
   padding: 0px;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -10642,11 +10636,6 @@ html{
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .px-0{
@@ -11634,6 +11623,11 @@ ul li .bullet{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-50:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-blue-800:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(30 66 159 / var(--tw-bg-opacity));
@@ -11656,6 +11650,11 @@ ul li .bullet{
 .hover\:text-gray-900:hover{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-blue-600:hover{
@@ -11977,6 +11976,11 @@ ul li .bullet{
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.dark .dark\:hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .dark .dark\:hover\:text-blue-500:hover{
   --tw-text-opacity: 1;
   color: rgb(63 131 248 / var(--tw-text-opacity));
@@ -12191,6 +12195,11 @@ ul li .bullet{
   .md\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:text-4xl{
