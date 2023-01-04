@@ -8916,6 +8916,11 @@ html{
   margin-bottom: 5rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mr-3{
   margin-right: 0.75rem;
 }
@@ -9246,6 +9251,22 @@ html{
 
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.max-w-3xl{
+  max-width: 48rem;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
+}
+
+.max-w-xl{
+  max-width: 36rem;
+}
+
+.max-w-6xl{
+  max-width: 72rem;
 }
 
 .flex-1{
@@ -12308,6 +12329,11 @@ ul li .bullet{
     line-height: 1.25rem;
   }
 
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:font-medium{
     font-weight: 500;
   }
@@ -12396,12 +12422,24 @@ ul li .bullet{
     width: 350px;
   }
 
+  .lg\:w-\[550px\]{
+    width: 550px;
+  }
+
+  .lg\:w-\[650px\]{
+    width: 650px;
+  }
+
   .lg\:min-w-\[450px\]{
     min-width: 450px;
   }
 
   .lg\:min-w-\[550px\]{
     min-width: 550px;
+  }
+
+  .lg\:min-w-\[50px\]{
+    min-width: 50px;
   }
 
   .lg\:max-w-3xl{
