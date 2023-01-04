@@ -9049,10 +9049,6 @@ html{
   margin-bottom: 0.25rem;
 }
 
-.mt-24{
-  margin-top: 6rem;
-}
-
 .box-border{
   box-sizing: border-box;
 }
@@ -9187,10 +9183,6 @@ html{
 
 .h-4{
   height: 1rem;
-}
-
-.h-12{
-  height: 3rem;
 }
 
 .min-h-\[106\.66px\]{
@@ -11372,10 +11364,6 @@ html{
   transition-duration: 300ms;
 }
 
-.duration-500{
-  transition-duration: 500ms;
-}
-
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -11712,11 +11700,6 @@ ul li .bullet{
   background-color: rgb(30 66 159 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[\#78C257\]:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(120 194 87 / var(--tw-bg-opacity));
-}
-
 .hover\:from-white:hover{
   --tw-gradient-from: #ffffff;
   --tw-gradient-to: rgb(255 255 255 / 0);
@@ -11774,11 +11757,6 @@ ul li .bullet{
 .hover\:text-gray-600:hover{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -12405,6 +12383,10 @@ ul li .bullet{
 }
 
 @media (min-width: 1024px){
+  .lg\:visible{
+    visibility: visible;
+  }
+
   .lg\:my-12{
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -12453,14 +12435,6 @@ ul li .bullet{
 
   .lg\:flex{
     display: flex;
-  }
-
-  .lg\:inline-flex{
-    display: inline-flex;
-  }
-
-  .lg\:contents{
-    display: contents;
   }
 
   .lg\:w-\[450px\]{
