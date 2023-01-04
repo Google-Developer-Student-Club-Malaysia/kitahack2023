@@ -955,8 +955,8 @@
             var loader = document.getElementById("preloader");
             window.addEventListener("load", function(){
                 setTimeout(function () {
-                    loader.classList.add("disappear");     
-                }, 300); 
+                    loader.style.display = "none";    
+                }, 500); 
                 document.body.style.overflow = "unset";
             })
         </script>
