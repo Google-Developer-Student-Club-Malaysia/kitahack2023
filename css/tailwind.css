@@ -9049,6 +9049,10 @@ html{
   margin-bottom: 0.25rem;
 }
 
+.mt-24{
+  margin-top: 6rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -9173,12 +9177,20 @@ html{
   height: 14px;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-9{
   height: 2.25rem;
 }
 
 .h-4{
   height: 1rem;
+}
+
+.h-12{
+  height: 3rem;
 }
 
 .min-h-\[106\.66px\]{
@@ -10436,6 +10448,10 @@ html{
   --tw-gradient-to: #24A0ED;
 }
 
+.to-\[\#2dd4bf\]{
+  --tw-gradient-to: #2dd4bf;
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -11348,8 +11364,16 @@ html{
   transition-duration: 75ms;
 }
 
+.duration-500{
+  transition-duration: 500ms;
+}
+
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 .ease-in{
@@ -11678,9 +11702,19 @@ ul li .bullet{
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#78C257\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 194 87 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-blue-800:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(30 66 159 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#78C257\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 194 87 / var(--tw-bg-opacity));
 }
 
 .hover\:from-white:hover{
@@ -11722,6 +11756,11 @@ ul li .bullet{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:text-\[\#0032FF\]:hover{
   --tw-text-opacity: 1;
   color: rgb(0 50 255 / var(--tw-text-opacity));
@@ -11737,8 +11776,19 @@ ul li .bullet{
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover{
   text-decoration-line: underline;
+}
+
+.hover\:shadow-xl:hover{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .table .hover\:hover:hovertr:hover th,
@@ -12355,10 +12405,6 @@ ul li .bullet{
 }
 
 @media (min-width: 1024px){
-  .lg\:visible{
-    visibility: visible;
-  }
-
   .lg\:my-12{
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -12385,6 +12431,14 @@ ul li .bullet{
     margin-right: 3rem;
   }
 
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mr-10{
+    margin-right: 2.5rem;
+  }
+
   .lg\:mt-8{
     margin-top: 2rem;
   }
@@ -12393,8 +12447,20 @@ ul li .bullet{
     margin-bottom: 2.5rem;
   }
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:inline-flex{
+    display: inline-flex;
+  }
+
+  .lg\:contents{
+    display: contents;
   }
 
   .lg\:w-\[450px\]{
