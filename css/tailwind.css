@@ -10553,10 +10553,6 @@ html{
   padding: 1rem;
 }
 
-.p-3{
-  padding: 0.75rem;
-}
-
 .p-0\.5{
   padding: 0.125rem;
 }
@@ -10571,6 +10567,10 @@ html{
 
 .p-1{
   padding: 0.25rem;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .p-8{
