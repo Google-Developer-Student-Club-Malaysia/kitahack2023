@@ -9176,6 +9176,10 @@ html{
   height: 1rem;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .min-h-\[106\.66px\]{
   min-height: 106.66px;
 }
@@ -9218,6 +9222,10 @@ html{
 
 .w-4{
   width: 1rem;
+}
+
+.w-6\/12{
+  width: 50%;
 }
 
 .max-w-2xl{
@@ -12009,6 +12017,16 @@ ul li .bullet{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.dark .dark\:brightness-200{
+  --tw-brightness: brightness(2);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dark .dark\:brightness-150{
+  --tw-brightness: brightness(1.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .dark .dark\:hover\:border-white:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -12185,6 +12203,11 @@ ul li .bullet{
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:underline{
