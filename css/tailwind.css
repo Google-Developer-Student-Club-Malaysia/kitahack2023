@@ -9036,6 +9036,14 @@ html{
   margin-bottom: 0.25rem;
 }
 
+.mb-24{
+  margin-bottom: 6rem;
+}
+
+.mt-36{
+  margin-top: 9rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -12269,6 +12277,10 @@ ul li .bullet{
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-6xl{
