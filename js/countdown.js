@@ -8,6 +8,16 @@ function updateCountdown() {
   // Calculate the remaining time in milliseconds
   const remainingTime = targetDate - currentDate;
 
+  // If the remaining time is less than or equal to zero, stop the countdown
+  if (remainingTime <= 0) {
+    clearInterval(interval);
+    document.querySelector("#days").style.setProperty("--value", 0);
+    document.querySelector("#hours").style.setProperty("--value", 0);
+    document.querySelector("#minutes").style.setProperty("--value", 0);
+    document.querySelector("#seconds").style.setProperty("--value", 0);
+    return;
+  }
+
   // Calculate the number of days, hours, minutes, and seconds remaining
   const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
   const hours = Math.floor(
@@ -24,4 +34,4 @@ function updateCountdown() {
 }
 
 // Update the countdown every second
-setInterval(updateCountdown, 1000);
+const interval = setInterval(updateCountdown, 1000);
