@@ -358,9 +358,7 @@
         <section class="container mt-20 px-5 mx-auto flex flex-col items-center md:px-10 lg:flex-row max-w-7xl">
             <div class="lg:w-[450px]">
                 <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Sponsorships</h1>
-                <p class="mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam,
-                    consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem,
-                    laborum labore vero nostrum amet!</p>
+                <p class="mt-5">We are currently seeking sponsors for KitaHack 2023. If you are interested in supporting this event and gaining exposure to a talented group of students and professionals, please get in touch with us to learn more about sponsorship opportunities.</p>
             </div>
         
             <div class="flex flex-col pt-5 lg:pl-10 lg:pt-0 gap-8 mx-auto items-center text-gray-700 dark:text-gray-400">
@@ -513,7 +511,9 @@
         <script>
             var loader = document.getElementById("preloader");
             window.addEventListener("load", function(){
-                loader.style.display = "none"; 
+                setTimeout(function () {
+                    loader.style.display = "none";    
+                }, 500);
                 document.body.style.overflow = "unset";
             })
         </script>
