@@ -9230,6 +9230,14 @@ html{
   height: 9rem;
 }
 
+.h-2\/3{
+  height: 66.666667%;
+}
+
+.h-80{
+  height: 20rem;
+}
+
 .min-h-\[106\.66px\]{
   min-height: 106.66px;
 }
@@ -12551,6 +12559,10 @@ ul li .bullet{
 
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:h-96{
+    height: 24rem;
   }
 
   .lg\:w-\[450px\]{
