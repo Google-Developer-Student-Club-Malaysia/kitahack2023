@@ -34,6 +34,7 @@
     <!-- JS -->
     <script src="../js/dark-light-switcher.js" defer></script>
     <script src="../js/sponsor-tab-switcher.js" defer></script>
+    <script src="../js/react-firebase-sunway.js"></script>
 </head>
 
 <body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
@@ -178,16 +179,106 @@
     <!-- END of Navbar -->
 
     <!-- Website under construction -->
-    <main class="container mx-auto flex flex-col justify-center items-center gap-14" style="height: 80vh;">
-        <div>
-            <img src="../img/dummy/site-construction.svg" alt="Site construction icon"
-                style="height: clamp(100px, 15vw, 60rem);" class="brightness-50 dark:brightness-150">
+    <main class="container mx-auto flex flex-col justify-center items-center gap-14">
+        <!-- HERO section -->
+        <div class="container mx-auto my-20 flex flex-col items-center lg:flex-row dark:text-gray-400 px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-6xl">
+            <div class="lg:w-[450px] lg:min-w-[550px] lg:mt-0">
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://gdsc.community.dev/sunway-university/"> <!-- TODO: edit href when bevy page is published-->
+                    <h1 class="flex flex-col font-bold text-3xl md:text-5xl dark:text-white">
+                        <span>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#70dbf7] to-[#60d7f6]">React</span>
+                            and <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FFCA28] to-[#F57F17]">Firebase</span>
+                        </span>
+                        <span>
+                            Workshop Series by <br/>Sunway University
+                            <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                            </svg>
+                        </span>
+                    </h1>
+                    
+                </a>
+                <li class="mt-10 text-lg font-bold hidden lg:flex flex-wrap justify-center lg:flex-col lg:gap-4">
+                    <span>Date: <em>23rd & 24th</em> February 2023 (2 days)</span>
+                    <span>Time: 6:00pm - 8:00pm</span>
+                    <span>Venue: Zoom</span>
+                </li>
+                <button
+                    class="lg:mt-8 lg:mb-10 my-10 bg-gradient-to-r from-[#70dbf7] to-[#60d7f6] text-white font-semibold py-4 px-6 rounded shadow hover:border-2 hover:from-white hover:to-white hover:text-[#60d7f6] transition duration-300 ease-in-out hover:scale-110 invisible lg:visible">
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://gdsc.community.dev/sunway-university/">RSVP Now</a> <!-- TODO: edit href when bevy page is published-->
+                </button>
+            </div>
+            <div class="mb-12 lg:mb-0">
+                <img src="../img/react_firebase_logo.png" class="p-8 w-full rounded-lg shadow-2xl" alt="" />
+            </div>
         </div>
-        <div>
-            <h1
-                class="font-bold dark:text-white text-gray-700 justify-self-center text-center text-2xl sm:text-3xl md:text-5xl">
-                Website under construction</h1>
+        <!-- HERO end -->
+
+        <!-- CHAPTERS -->
+        <div class="container mx-auto px-auto flex flex-row flex-wrap gap-4 justify-center">
+            <picture>
+                <source srcset="../img/chapters/GDSC_Malaysia_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
+                <img src="../img/chapters/GDSC_Malaysia_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
+            </picture>
+            <a href="https://gdsc.community.dev/sunway-university/" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source srcset="../img/chapters/GDSC_Sunway_University_Logo_Transparent_Horizontal.png"
+                        media="(prefers-color-scheme: dark)">
+                    <img src="../img/chapters/GDSC_Sunway_University_Logo_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
+                </picture>
+            </a>
         </div>
+        <!-- CHAPTERS END -->
+
+        <!-- COUNTDOWN -->
+        <section class="container mt-32 mb-16 mx-auto h-72 p-7 bg-center bg-no-repeat bg-cover sm:mb-6"
+            style="background-image: url(../img/countdown_background.svg)">
+            <h2 class="text-center pb-4 text-3xl md:text-4xl font-medium text-gray-700 dark:text-white">Days until Workshop</h2>
+            <div class="flex flex-row gap-5 text-center auto-cols-max justify-center">
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-red dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center aspect-video p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="days" style="--value:15;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">days</span>
+                </div>
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-blue dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="hours" style="--value:10;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">hours</span>
+                </div>
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-green dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="minutes" style="--value:24;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">minutes</span>
+                </div>
+                <div
+                    class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-orange dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center p-1 sm:p-4">
+                    <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
+                        <span id="seconds" style="--value:29;"></span>
+                    </span>
+                    <span class="text-md sm:text-xl font-medium">seconds</span>
+                </div>
+            </div>
+        </section>
+        <!-- COUNTDOWN end -->
+
+        <!-- DESCRIPTION section -->
+        <!-- DESCRIPTION end -->
+
+        <!-- ORGANISERS section -->
+        <!-- ORGANISERS end -->
+
+        <!-- SPONSOR section -->
+        <!-- SPONSOR end -->
     </main>
     <!-- END of website under construction -->
 
