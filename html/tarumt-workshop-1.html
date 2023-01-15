@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../img/icons/dsc_logo.ico" type="image/x-icon">
-        <title>KDU Android Workshop | KitaHack2023</title>
+        <title>TARUMT Build a responsive website using Angular | KitaHack2023</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -28,12 +28,13 @@
         <!-- JS -->
         <script src="../js/dark-light-switcher.js" defer></script>
         <script src="../js/sponsor-tab-switcher.js" defer></script>
-        <script src="../js/android-workshop-kdu.js"></script>
+        <script src="../js/tarumt-workshop-1.js" defer></script>
     </head>
 
     <body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
         <!-- Pre-Loader -->
         <div id="preloader"></div>
+
         <!-- Navbar -->
         <nav class="border-gray-200 px-4 py-2.5 rounded navbar md:px-2">
             <div class="container flex flex-row flex-wrap justify-between mx-auto">
@@ -69,12 +70,12 @@
                     <div class="hidden w-full md:block md:w-auto">
                         <ul class="flex flex-row space-x-8 p-4 font-medium text-sm bg-gray-50 rounded-lg dark:bg-gray-800 md:dark:bg-gray-900">
                             <li>
-                                <a href="/kitahack2023/" class="block text-gray-700 rounded hover:bg-gray-100 hover:bg-inherit dark:text-gray-400 dark:hover:bg-gray-900 dark:hover:text-white">Home</a>
+                                <a href="/kitahack2023/" class="block rounded" aria-current="page">Home</a>
                             </li>
 
                             <!-- Event Menu Dropdown -->
                             <li class="dropdown dropdown-bottom dropdown-end block hover:cursor-pointer hover:bg-gray-100 hover:bg-inherit dark:text-gray-400 dark:hover:bg-gray-900" tabindex="0">
-                                <label class="hover:cursor-pointer text-blue-700 dark:text-white dark:hover:text-white" tabindex="0">
+                                <label class="text-blue-700 hover:cursor-pointer dark:text-white" tabindex="0">
                                     Event
                                     <svg class="inline-block w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -89,7 +90,7 @@
                                     <!-- Workshop Menu Dropdown -->
                                     <li>
                                         <div class="group dropdown dropdown-left hover:cursor-pointer" tabindex="0">
-                                            <label class="hover:cursor-pointer text-blue-700 dark:text-white dark:hover:text-white" tabindex="0">
+                                            <label class="text-blue-700 hover:cursor-pointer dark:text-white" tabindex="0">
                                                 Workshops
                                                 <svg class="inline-block w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -97,11 +98,11 @@
                                             </label>
                                             <ul id="workshop_toggle" tabindex="0" class="flex-row flex-wrap dropdown-content menu bg-white rounded shadow w-[300px] mt-[-45px] mr-1 duration-100 ease-in hidden dark:bg-gray-700 group-hover:block">
                                                 <li class="dark:hover:text-white"><a href="/kitahack2023/html/sunway-web-dev.html">Sunway Web Dev Workshop</a></li>
-                                                <li class="dark:hover:text-white"><a href="/kitahack2023/html/monash-flutter-firebase.html" aria-current="page">Monash Flutter & Flask Workshop Series</a></li>
-                                                <li class="dark:hover:text-white"><a href="/kitahack2023/html/kdu-android.html" class="text-blue-700 dark:text-white">KDU Android Workshop</a></li>
+                                                <li class="dark:hover:text-white"><a href="/kitahack2023/html/monash-flutter-firebase.html">Monash Flutter & Flask Workshop Series</a></li>
+                                                <li class="dark:hover:text-white"><a href="/kitahack2023/html/kdu-android.html">KDU Android Workshop</a></li>
                                                 <li class="dark:hover:text-white"><a href="/kitahack2023/html/um-machine-learning.html">UM Machine Learning Workshop</a></li>
-                                                <li class="dark:hover:text-white"><a href="/kitahack2023/html/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
-                                                <li class="dark:hover:text-white"><a href="/kitahack2023/html/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
+                                                <li class="text-blue-700 dark:text-white"><a href="/kitahack2023/html/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
+                                                <li class="dark:hover:text-white"><a href="/kitahack2023/html/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -119,13 +120,13 @@
                 <div class="hidden md:hidden w-full" id="navbar-default">
                     <ul class="flex flex-col gap-1 p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
                         <li>
-                            <a href="/kitahack2023/" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:p-0 dark:text-white dark:bg-gray-700" aria-current="page">Home</a>
+                            <a href="/kitahack2023/" class="block py-2 pl-3 pr-4 rounded md:p-0 dark:text-white dark:bg-gray-700" aria-current="page">Home</a>
                         </li>
 
                         <!-- Event Menu Dropdown -->
                         <li>
-                            <div class="group dropdown dropdown-bottom dropdown-end block py-2 pl-3 pr-4 text-gray-700 rounded hover:cursor-pointer hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700" tabindex="0">
-                                <label class="hover:cursor-pointer dark:hover:text-white dark:group-hover:text-white" tabindex="0">
+                            <div class="group dropdown dropdown-bottom dropdown-end block py-2 pl-3 pr-4 text-white bg-blue-700 rounded hover:text-black hover:cursor-pointer hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700" tabindex="0">
+                                <label class="hover:cursor-pointer dark:hover:text-black dark:group-hover:text-white" tabindex="0">
                                     Event
                                     <svg class="inline-block w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -153,7 +154,7 @@
                                                     <li class="p-3 rounded-lg dark:hover:text-white"><a href="/kitahack2023/html/monash-flutter-firebase.html">Monash Flutter & Flask Workshop Series</a></li>
                                                     <li class="p-3 rounded-lg dark:hover:text-white"><a href="/kitahack2023/html/kdu-android.html">KDU Android Workshop</a></li>
                                                     <li class="p-3 rounded-lg dark:hover:text-white"><a href="/kitahack2023/html/um-machine-learning.html">UM Machine Learning Workshop</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/kitahack2023/html/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white text-white bg-blue-700"><a href="/kitahack2023/html/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
                                                     <li class="p-3 rounded-lg dark:hover:text-white"><a href="/kitahack2023/html/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
                                                 </ul>
                                             </div>
@@ -173,51 +174,31 @@
         <!-- END of Navbar -->
 
         <!-- Hero -->
-        <!-- Reference: https://tailwind-elements.com/snippets/tailwind/tailwindelements/3578672#html-tab-view -->
-        <section class="mb-40">
-            <div class="px-6 py-12 md:px-12 text-gray-800 text-center lg:text-left dark:text-white">
-                <div class="container mx-auto xl:px-32">
-                    <div class="grid lg:grid-cols-2 gap-12 flex items-center">
-                        <div class="mt-12 lg:mt-0">
-                            <a target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session">
-                                <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#78C257] to-[#24A0ED]">Android Workshop <br /></h1>
-                                <span class="text-3xl font-bold mb-12">By KDU</span>
-                                <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+        <div class="container mx-auto my-20 px-10 md:px-20 flex flex-col items-center lg:flex-row dark:text-gray-400">
+            <div class="lg:w-[450px] lg:min-w-[450px]">
+                <h1 class="flex flex-col font-bold text-3xl md:text-5xl dark:text-white">
+                    <span id="hero_title" class="text-transparent text-5xl md:text-6xl xl:text-6xl font-bold tracking-tight mb-6 dark:text-white dark:bg-none">
+                        Build a responsive website using Angular
+                    </span>
+
+                    <span>
+                        <!-- Button -->
+                        <span id="hero_button" class="h-14 btn border-white relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
+                            <span class="relative flex px-5 py-3.5 transition-all ease-in duration-75 bg-white dark:text-gray-400 dark:bg-[#2A303C] rounded-md group-hover:bg-opacity-0 dark:hover:text-white">
+                                Coming Soon
+                                <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd">
+                                    </path>
                                 </svg>
-                            </a>
-                            <br />
-
-                            <div class="hidden lg:block lg:mt-10">
-                                <ul class="list_none dark:text-gray-400">
-                                    <li class="text-lg font-bold lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
-                                        <span>🗓️ Date: 6/2/2023 (Monday)</span>
-                                    </li>
-                                    <li class="text-lg font-bold lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
-                                        <span>⏰ Time: 8:00pm - 9:00pm</span>
-
-                                    </li>
-                                    <li class="text-lg font-bold lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
-                                        <span>📍 Venue: Zoom</span>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                            <a class="inline-flex mt-10" target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session">
-                                <button class="h-12 hidden lg:flex items-center justify-center uppercase font-semibold px-8 rounded bg-gradient-to-r from-[#78C257] to-[#2dd4bf] shadow-md text-white hover:bg-[#78C257] hover:text-white hover:scale-110 hover:shadow-xl transition duration-500 ease-in-out">
-                                    RSVP Now!
-                                    <button />
-                            </a>
-                        </div>
-                        <div class="lg:mb-0 bg-blue-500 rounded-lg shadow-2xl">
-                            <img src="../img/android_logo_green.png" class="w-full rounded-lg shadow-2xl" alt="" />
-                        </div>
-                    </div>
-                </div>
+                            </span>
+                        </span>
+                    </span>
+                </h1>
             </div>
-        </section>
-        <!-- END of Hero -->
+            <div class="mt-5 lg:mt-0">
+                <img src="../img/banners/solutionchallenge-2022-chapterevents-banner-lg.png" alt="" class="rounded-md shadow-2xl shadow-gray-900">
+            </div>
+        </div>
 
         <!-- Chapters -->
         <div class="container mx-auto px-auto flex flex-row flex-wrap gap-4 justify-center">
@@ -225,18 +206,18 @@
                 <source srcset="../img/chapters/GDSC_Malaysia_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
                 <img src="../img/chapters/GDSC_Malaysia_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
             </picture>
-
-            <picture>
-                <source srcset="../img/chapters/GDSC_KDU_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
-                <img src="../img/chapters/GDSC_KDU_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
-            </picture>
-
+            <a href="https://gdsc.community.dev/tunku-abdul-rahman-university-college/" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <source srcset="../img/chapters/GDSC_TARUMT_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
+                    <img src="../img/chapters/GDSC_TARUMT_Horizontal.jpg" class="max-w-xs md:max-w-md rounded-md">
+                </picture>
+            </a>
         </div>
 
-        <!-- Countdown -->
-        <section class="container mt-32 mb-16 mx-auto h-72 p-7 bg-center bg-no-repeat bg-cover sm:mb-6" style="background-image: url(../img/countdown_background.svg)">
+        <!-- Countdown Section -->
+        <section class="container mx-auto mt-20 h-72 p-7 bg-center bg-no-repeat bg-cover" style="background-image: url(img/countdown_background.svg)">
             <h2 class="text-center pb-4 text-3xl md:text-4xl font-medium text-gray-700 dark:text-white">Days until
-                Workshop
+                Demo-day
             </h2>
             <div class="flex flex-row gap-5 text-center auto-cols-max justify-center">
                 <div class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-red dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center aspect-video p-1 sm:p-4">
@@ -265,50 +246,55 @@
                 </div>
             </div>
         </section>
-        <!-- END of Organisers -->
+        <!-- End Countdown Section -->
 
         <!-- Details -->
         <section class="container my-24 mx-auto flex flex-col items-center lg:flex-row text-gray-700 dark:text-gray-400 px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-5xl">
-            <h1 class="font-bold text-3xl text-center md:text-5xl lg:min-w-[550px] dark:text-white">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#78C257] to-[#24A0ED]">Android</span><br>Workshop Series
-            </h1>
+            <h1 class="font-bold text-3xl text-center md:text-5xl lg:min-w-[450px] dark:text-white">What is <br> Single Page Application?</h1>
 
             <ul class="flex flex-col gap-3 pt-5 lg:pl-10 lg:mr-12 lg:pt-0 lg:gap-4">
-                <li class="text-justify lg:mr-10">
-                    🚀 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam,
-                    consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem,
-                    laborum labore vero nostrum amet! 🚀
+                <li class="text-justify lg:text-left">
+                    What is single page application?
                 </li>
-                <li class="text-justify lg:mr-10">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam,
-                    consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem,
-                    laborum labore vero nostrum amet!
+                <li class="text-justify lg:text-left">
+                    Single page application (SPA) is a web application or website that loads a single HTML page and dynamically updates the page as user interact with the app.
+                    SPAs use JavaScript and APIs to create a smooth, fast, and responsive user experience without the need for full page reloads. Example of SPA frameworks
+                    include Angular, React and Vue.js.
                 </li>
-                <li class="text-justify lg:mr-10">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis impedit fugiat aperiam,
-                    consequatur harum, tenetur quod accusamus cupiditate inventore, autem eum! Veritatis maiores est autem,
-                    laborum labore vero nostrum amet!
+                <li class="text-justify lg:text-left">
+                    In this workshop, you will learn how to build an Angular website by using Google's open source Material UI design system and Tailwind CSS.
+                </li>
+                <li class="text-justify lg:text-left">
+                    Agenda:
+
+                    <ol class="ml-6 mt-3 list-decimal">
+                        <li>Welcoming</li>
+                        <li>Building Angular webapp with Material UI and Tailwind CSS</li>
+                        <li>QnA Session</li>
+                        <li>Photo Taking Session</li>
+                        <li>Closing</li>
+                    </ol>
                 </li>
                 <br>
-                <li class="flex flex-col flex-wrap gap-3 justify-center lg:flex-col lg:gap-2">
-                    <span>🗓️ Date: 6/2/2023 (Wed)</span>
-                    <span>⏰ Time: 8:00pm - 9:00pm</span>
-                    <span>📍 Venue: Zoom</span>
+                <li class="flex flex-row flex-wrap gap-3 justify-center lg:flex-col lg:gap-2">
+                    <span>🗓️ Date: 11/2/2023 (Sat)</span>
+                    <span>⏰ Time: 8:00pm - 10:00pm</span>
+                    <span>📍 Venue: Google Meet</span>
                 </li>
             </ul>
         </section>
 
         <!-- Organisers -->
-        <h1 class="font-bold text-3xl md:text-5xl mt-20 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
+        <h1 class="font-bold text-3xl md:text-5xl mt-10 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
         <section class="w-full flex flex-wrap justify-center items-center pt-10 px-4">
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/tae_woo_kim_KDU.webp" alt="">
+                    <img class="w-full" src="../img/organisers/sammi_chia_li.webp" alt="">
                 </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Tae Woo Kim</p>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Sammi Chia Li</p>
                 <p class="text-gray-700 font-normal dark:text-gray-400">GDSC Lead</p>
                 <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
-                    <a target="_blank" href="https://gdsc.community.dev/u/m8p6tv/" class="flex flex-row gap-2 items-center">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mbnndp/" rel="noopener noreferrer" class="flex flex-row gap-2 items-center">
                         <span>View Profile</span>
                         <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
@@ -319,12 +305,29 @@
 
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/muhammad_ahmad_ali_KDU.webp" alt="">
+                    <img class="w-full" src="../img/organisers/kayin_leong.webp" alt="">
                 </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Muhammad Ahmad Ali</p>
-                <p class="text-gray-700 font-normal dark:text-gray-400">Management Lead</p>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Kayin Leong</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Technical Lead</p>
                 <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
-                    <a target="_blank" href="https://gdsc.community.dev/u/m43qfc/" class="flex flex-row gap-2 items-center">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m6umcg/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
+            </div>
+
+
+            <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
+                <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
+                    <img class="w-full" src="../img/organisers/owen_chan_wei_wen.webp" alt="">
+                </div>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Owen Chan Wei Wen</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Operations Lead</p>
+                <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m2yx2j/" rel="noopener noreferrer" class="flex flex-row gap-2 items-center">
                         <span>View Profile</span>
                         <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
@@ -335,12 +338,12 @@
 
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/GDG-Bevy-DefaultProfile.webp" alt="">
+                    <img class="w-full" src="../img/organisers/deborah_joseph.webp" alt="">
                 </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Asriel Teh</p>
-                <p class="text-gray-700 font-normal dark:text-gray-400">GDSC Co-lead</p>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Deborah Joseph</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Operations Lead</p>
                 <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
-                    <a target="_blank" href="https://gdsc.community.dev/u/m2a8hy/" class="flex flex-row gap-2 items-center">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mwzqht/" rel="noopener noreferrer" class="flex flex-row gap-2 items-center">
                         <span>View Profile</span>
                         <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
@@ -351,12 +354,12 @@
 
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/irwan_michael_chan_KDU.webp" alt="">
+                    <img class="w-full" src="../img/organisers/yen_lem_shim.webp" alt="">
                 </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Irwan Michael Chan</p>
-                <p class="text-gray-700 font-normal dark:text-gray-400">Tech Lead</p>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Yen Lem Shim</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Operations Lead</p>
                 <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
-                    <a target="_blank" href="https://gdsc.community.dev/u/mz8vpp/" class="flex flex-row gap-2 items-center">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m8qnsv/" rel="noopener noreferrer" class="flex flex-row gap-2 items-center">
                         <span>View Profile</span>
                         <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
@@ -365,139 +368,6 @@
                 </button>
             </div>
         </section>
-        <!-- END of Organisers -->
-
-        <!-- Sponsors -->
-        <!-- Sponsor Logo -->
-        <section class="container mt-20 mx-auto flex flex-col items-center lg:flex-row px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-5xl">
-            <div class="lg:w-[450px]">
-                <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Sponsorships</h1>
-                <p class="mt-5">We are currently seeking sponsors for KitaHack 2023. If you are interested in supporting this event and gaining exposure to a talented group of students and professionals, please get in touch with us to learn more about sponsorship opportunities.</p>
-            </div>
-
-            <div class="flex flex-col pt-5 lg:pl-10 lg:pt-0 gap-8 mx-auto items-center text-gray-700 dark:text-gray-400">
-                <!-- Tabs -->
-                <div class="tabs tabs-boxed flex flex-row flex-wrap justify-center max-w-md">
-                    <a class="tab tab-active duration-100 ease-in" onclick="activate(event, '#diamond_sponsor')">Diamond</a>
-                    <a class="tab duration-100 ease-in" onclick="activate(event, '#platinum_sponsor')">Platinum</a>
-                    <a class="tab duration-100 ease-in" onclick="activate(event, '#gold_sponsor')">Gold</a>
-                    <a class="tab duration-100 ease-in" onclick="activate(event, '#silver_sponsor')">Silver</a>
-                    <a class="tab duration-100 ease-in" onclick="activate(event, '#bronze_sponsor')">Bronze</a>
-                </div>
-
-                <!-- Content -->
-                <div id="diamond_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5">
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-                </div>
-
-                <div id="platinum_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-                </div>
-
-                <div id="gold_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-                </div>
-
-                <div id="silver_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-                </div>
-
-                <div id="bronze_sponsor" class="tab_content flex flex-wrap flex-row justify-center gap-5 hidden">
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="mb-2">
-                            <p class="text-md">Sponsor Name</p>
-                            <small>Subtitle</small>
-                        </div>
-                        <div class="min-h-[106.66px]">
-                            <img src="../img/dummy/600x200.png" alt="" class="max-w-xs rounded-md">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END of Sponsors -->
 
         <!-- Footer -->
         <footer class="p-4 sm:p-6">
@@ -532,9 +402,7 @@
         <script>
             var loader = document.getElementById("preloader");
             window.addEventListener("load", function () {
-                setTimeout(function () {
-                    loader.style.display = "none";
-                }, 500);
+                loader.style.display = "none";
                 document.body.style.overflow = "unset";
             })
         </script>
