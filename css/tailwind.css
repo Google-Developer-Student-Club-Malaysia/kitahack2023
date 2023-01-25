@@ -9222,6 +9222,16 @@ html{
   height: 50%;
 }
 
+.max-h-min{
+  max-height: -moz-min-content;
+  max-height: min-content;
+}
+
+.max-h-max{
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+
 .min-h-\[106\.66px\]{
   min-height: 106.66px;
 }
@@ -12598,6 +12608,10 @@ ul li .bullet{
 
   .lg\:h-96{
     height: 24rem;
+  }
+
+  .lg\:max-h-20{
+    max-height: 5rem;
   }
 
   .lg\:w-\[450px\]{
