@@ -9214,6 +9214,11 @@ html{
   height: 1rem;
 }
 
+.max-h-min{
+  max-height: -moz-min-content;
+  max-height: min-content;
+}
+
 .min-h-\[106\.66px\]{
   min-height: 106.66px;
 }
@@ -9242,6 +9247,10 @@ html{
   width: 266.67px;
 }
 
+.w-5\/12{
+  width: 41.666667%;
+}
+
 .w-80{
   width: 20rem;
 }
@@ -9260,10 +9269,6 @@ html{
 
 .w-4{
   width: 1rem;
-}
-
-.w-12{
-  width: 3rem;
 }
 
 .max-w-2xl{
@@ -9320,10 +9325,6 @@ html{
 
 .grow{
   flex-grow: 1;
-}
-
-.basis-2\/6{
-  flex-basis: 33.333333%;
 }
 
 .table-auto{
@@ -9894,6 +9895,10 @@ html{
   gap: 2rem;
 }
 
+.gap-24{
+  gap: 6rem;
+}
+
 .gap-14{
   gap: 3.5rem;
 }
@@ -9922,12 +9927,6 @@ html{
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -10793,6 +10792,18 @@ html{
   padding-top: 1.25rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pt-1\.5{
+  padding-top: 0.375rem;
+}
+
+.pt-1{
+  padding-top: 0.25rem;
+}
+
 .pt-10{
   padding-top: 2.5rem;
 }
@@ -11114,10 +11125,6 @@ html{
 
 .opacity-100{
   opacity: 1;
-}
-
-.opacity-50{
-  opacity: 0.5;
 }
 
 .bg-blend-normal{
@@ -12118,6 +12125,11 @@ ul li .bullet{
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.dark .dark\:brightness-50{
+  --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .dark .dark\:brightness-100{
   --tw-brightness: brightness(1);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -12125,6 +12137,11 @@ ul li .bullet{
 
 .dark .dark\:brightness-150{
   --tw-brightness: brightness(1.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dark .dark\:invert{
+  --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -12437,6 +12454,11 @@ ul li .bullet{
     line-height: 1.75rem;
   }
 
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-8xl{
     font-size: 6rem;
     line-height: 1;
@@ -12541,6 +12563,10 @@ ul li .bullet{
 
   .lg\:h-96{
     height: 24rem;
+  }
+
+  .lg\:max-h-20{
+    max-height: 5rem;
   }
 
   .lg\:w-\[450px\]{
