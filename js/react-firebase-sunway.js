@@ -1,5 +1,5 @@
-// Set the target date to Feb 20 9AM 2023
-const targetDate = new Date(2023, 1, 4, 20, 0, 0);
+// Set the target date to Feb 23 6PM 2023
+const targetDate = new Date(2023, 1, 23, 18, 0, 0);
 
 function updateCountdown() {
   // Get the current date and time
@@ -7,6 +7,16 @@ function updateCountdown() {
 
   // Calculate the remaining time in milliseconds
   const remainingTime = targetDate - currentDate;
+
+  // If the remaining time is less than or equal to zero, stop the countdown
+  if (remainingTime <= 0) {
+    clearInterval(interval);
+    document.querySelector("#days").style.setProperty("--value", 0);
+    document.querySelector("#hours").style.setProperty("--value", 0);
+    document.querySelector("#minutes").style.setProperty("--value", 0);
+    document.querySelector("#seconds").style.setProperty("--value", 0);
+    return;
+  }
 
   // Calculate the number of days, hours, minutes, and seconds remaining
   const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
@@ -24,4 +34,4 @@ function updateCountdown() {
 }
 
 // Update the countdown every second
-setInterval(updateCountdown, 1000);
+const interval = setInterval(updateCountdown, 1000);
