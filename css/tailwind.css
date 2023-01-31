@@ -8986,6 +8986,14 @@ html{
   margin-bottom: 3rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .mb-24{
   margin-bottom: 6rem;
 }
@@ -8996,10 +9004,6 @@ html{
 
 .mb-4{
   margin-bottom: 1rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
 }
 
 .mt-16{
@@ -9020,10 +9024,6 @@ html{
 
 .mt-28{
   margin-top: 7rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
 }
 
 .mt-10{
@@ -9186,12 +9186,12 @@ html{
   height: 18rem;
 }
 
-.h-\[150px\]{
-  height: 150px;
-}
-
 .h-96{
   height: 24rem;
+}
+
+.h-\[150px\]{
+  height: 150px;
 }
 
 .h-\[14px\]{
@@ -9212,6 +9212,18 @@ html{
 
 .h-4{
   height: 1rem;
+}
+
+.h-\[1000px\]{
+  height: 1000px;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .max-h-min{
@@ -9243,6 +9255,10 @@ html{
   width: 300px;
 }
 
+.w-2\/3{
+  width: 66.666667%;
+}
+
 .w-\[266\.67px\]{
   width: 266.67px;
 }
@@ -9253,10 +9269,6 @@ html{
 
 .w-80{
   width: 20rem;
-}
-
-.w-2\/3{
-  width: 66.666667%;
 }
 
 .w-64{
@@ -10719,6 +10731,11 @@ html{
   padding-bottom: 0.75rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -10737,11 +10754,6 @@ html{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .py-24{
@@ -12290,6 +12302,10 @@ ul li .bullet{
     height: 2.25rem;
   }
 
+  .sm\:h-96{
+    height: 24rem;
+  }
+
   .sm\:w-1\/4{
     width: 25%;
   }
@@ -12669,6 +12685,14 @@ ul li .bullet{
 @media (min-width: 1280px){
   .xl\:block{
     display: block;
+  }
+
+  .xl\:h-screen{
+    height: 100vh;
+  }
+
+  .xl\:h-\[80vh\]{
+    height: 80vh;
   }
 
   .xl\:flex-row{
