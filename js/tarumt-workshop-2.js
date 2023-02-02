@@ -1,5 +1,5 @@
-// Set the target date to Feb 11 7PM 2023
-const targetDate = new Date(2023, 1, 11, 20, 0, 0);
+// Set the target date to Feb 12 7PM 2023
+const targetDate = new Date(2023, 1, 12, 20, 0, 0);
 
 function updateCountdown() {
   // Get the current date and time

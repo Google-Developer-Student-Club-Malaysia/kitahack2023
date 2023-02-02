@@ -8930,6 +8930,11 @@ html{
   margin-bottom: 2.5rem;
 }
 
+.mx-10{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mr-3{
   margin-right: 0.75rem;
 }
@@ -9062,12 +9067,12 @@ html{
   margin-bottom: 2.5rem;
 }
 
-.ml-6{
-  margin-left: 1.5rem;
-}
-
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
 }
 
 .box-border{
@@ -9186,12 +9191,12 @@ html{
   height: 18rem;
 }
 
-.h-96{
-  height: 24rem;
-}
-
 .h-\[150px\]{
   height: 150px;
+}
+
+.h-96{
+  height: 24rem;
 }
 
 .h-\[14px\]{
@@ -9212,18 +9217,6 @@ html{
 
 .h-4{
   height: 1rem;
-}
-
-.h-\[1000px\]{
-  height: 1000px;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-screen{
-  height: 100vh;
 }
 
 .max-h-min{
@@ -9576,6 +9569,10 @@ html{
 
 .list-\[upper-roman\]{
   list-style-type: upper-roman;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .appearance-none{
@@ -12541,6 +12538,11 @@ ul li .bullet{
     margin-bottom: 2rem;
   }
 
+  .lg\:mx-\[400px\]{
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
   .lg\:mt-0{
     margin-top: 0px;
   }
@@ -12685,10 +12687,6 @@ ul li .bullet{
 @media (min-width: 1280px){
   .xl\:block{
     display: block;
-  }
-
-  .xl\:h-screen{
-    height: 100vh;
   }
 
   .xl\:h-\[80vh\]{
