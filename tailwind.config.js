@@ -14,7 +14,8 @@ module.exports = {
   variants: {
     extend: {
       visibility: ["group-hover"],
-    }
+      display: ["dark"],
+    },
   },
   plugins: [
     require("tailwindcss"),
