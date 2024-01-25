@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -6,36 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../img/icons/dsc_logo.ico" type="image/x-icon">
-        <title>Google Solution Challenge Info Session | KitaHack 2023</title>
+        <title>Monash Flutter + Flask | KitaHack2023</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--OG-->
+        <meta property="og:title" content="GDSC KitaHack 2023" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://google-developer-student-club-malaysia.github.io/kitahack2023/" />
+        <meta property="og:image" content="/kitahack2023/img/kitahackOG.png" />
+        <meta property="og:description" content="KitaHack 2023, a National Hackathon organized by GDSC Malaysia Powered by Google" />
+        <!--Twitter OG-->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="GDSC KitaHack 2023" />
+        <meta name="twitter:description" content="KitaHack 2023, a National Hackathon organized by GDSC Malaysia Powered by Google" />
+        <meta name="twitter:image" content="/kitahack2023/img/kitahackOG.png" />
 
         <!-- CSS -->
         <link rel="stylesheet" src="../css/style.css">
         <link rel="stylesheet" href="../css/tailwind.css">
-        <style>
-            .banner {
-                background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/banners/solutionchallenge-2022-chapterevents-banner-lg.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .chapter-image {
-                background: url('../img/chapters/GDSC_Monash_University_Horizontal.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-        </style>
 
         <!-- JS -->
         <script src="../js/dark-light-switcher.js" defer></script>
         <script src="../js/sponsor-tab-switcher.js" defer></script>
-        <script src="../js/info-session.js"></script>
+        <script src="../js/flutter-workshop-monash.js"></script>
     </head>
 
     <body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
+        <!-- Pre-Loader -->
+        <div id="preloader"></div>
         <!-- Navbar -->
         <nav class="border-gray-200 px-4 py-2.5 rounded navbar md:px-2">
             <div class="container flex flex-row flex-wrap justify-between mx-auto">
@@ -71,12 +69,12 @@
                     <div class="hidden w-full md:block md:w-auto">
                         <ul class="flex flex-row space-x-8 p-4 font-medium text-sm bg-gray-50 rounded-lg dark:bg-gray-800 md:dark:bg-gray-900">
                             <li>
-                                <a href="/" class="block rounded hover:text-blue-700" aria-current="page">Home</a>
+                                <a href="/" class="block text-gray-700 rounded hover:bg-gray-100 hover:bg-inherit dark:text-gray-400 dark:hover:bg-gray-900 dark:hover:text-white">Home</a>
                             </li>
 
                             <!-- Event Menu Dropdown -->
-                            <li class="dropdown dropdown-bottom dropdown-end block hover:cursor-pointer hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-900" tabindex="0">
-                                <label class="text-blue-700 hover:cursor-pointer dark:text-white" tabindex="0">
+                            <li class="dropdown dropdown-bottom dropdown-end block hover:cursor-pointer hover:bg-gray-100 hover:bg-inherit dark:text-gray-400 dark:hover:bg-gray-900" tabindex="0">
+                                <label class="hover:cursor-pointer text-blue-700 dark:text-white dark:hover:text-white" tabindex="0">
                                     Event
                                     <svg class="inline-block w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -84,26 +82,26 @@
                                 </label>
 
                                 <ul tabindex="0" class="dropdown-content menu bg-white rounded shadow w-44 mt-5 dark:bg-gray-700">
-                                    <li class="dark:hover:text-white"><a href="/html/demo-day.html">Demo Day</a></li>
-                                    <li><a href="/html/gsc-info-session.html" class="text-blue-700 dark:text-white">Google Solution Challenge 2023 Info Session</a></li>
-                                    <li class="dark:hover:text-white"><a href="/html/sc-kickoff.html">2023 Solution Challenge Kickoff Event</a></li>
+                                    <li class="dark:hover:text-white"><a href="/demo-day.html">Demo Day</a></li>
+                                    <li class="dark:hover:text-white"><a href="/gsc-info-session.html">Google Solution Challenge 2023 Info Session</a></li>
+                                    <li class="dark:hover:text-white"><a href="/sc-kickoff.html">2023 Solution Challenge Kickoff Event</a></li>
 
                                     <!-- Workshop Menu Dropdown -->
                                     <li>
                                         <div class="group dropdown dropdown-left hover:cursor-pointer" tabindex="0">
-                                            <label class="hover:cursor-pointer dark:hover:text-white" tabindex="0">
+                                            <label class="hover:cursor-pointer text-blue-700 dark:text-white dark:hover:text-white" tabindex="0">
                                                 Workshops
                                                 <svg class="inline-block w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                                                 </svg>
                                             </label>
                                             <ul id="workshop_toggle" tabindex="0" class="flex-row flex-wrap dropdown-content menu bg-white rounded shadow w-[300px] mt-[-45px] mr-1 duration-100 ease-in hidden dark:bg-gray-700 group-hover:block">
-                                                <li class="dark:hover:text-white"><a href="/html/sunway-web-dev.html">Sunway React & Firebase Workshop Series</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/monash-flutter-firebase.html">Monash Flutter & Flask Workshop Series</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/kdu-android.html">KDU Android Workshop</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/um-machine-learning.html">UM Machine Learning Workshop</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
+                                                <li class="dark:hover:text-white"><a href="/sunway-web-dev.html">Sunway React & Firebase Workshop Series</a></li>
+                                                <li class="dark:hover:text-white"><a href="/monash-flutter-firebase.html" class="text-blue-700 dark:text-white" aria-current="page">Monash Flutter & Flask Workshop Series</a></li>
+                                                <li class="dark:hover:text-white"><a href="/kdu-android.html">KDU Android Workshop</a></li>
+                                                <li class="dark:hover:text-white"><a href="/um-machine-learning.html">UM Machine Learning Workshop</a></li>
+                                                <li class="dark:hover:text-white"><a href="/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
+                                                <li class="dark:hover:text-white"><a href="/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -121,13 +119,13 @@
                 <div class="hidden md:hidden w-full" id="navbar-default">
                     <ul class="flex flex-col gap-1 p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
                         <li>
-                            <a href="/" class="block py-2 pl-3 pr-4 rounded md:p-0 dark:text-white dark:bg-gray-700" aria-current="page">Home</a>
+                            <a href="/" class="block py-2 pl-3 pr-4 rounded md:p-0 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Home</a>
                         </li>
 
                         <!-- Event Menu Dropdown -->
                         <li>
-                            <div class="group dropdown dropdown-bottom dropdown-end block py-2 pl-3 pr-4 text-white bg-blue-700 rounded hover:text-black hover:cursor-pointer hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700" tabindex="0">
-                                <label class="hover:cursor-pointer dark:hover:text-black dark:group-hover:text-white" tabindex="0">
+                            <div class="group dropdown dropdown-bottom dropdown-end block py-2 pl-3 pr-4 text-white bg-blue-700 rounded hover:text-black dark:bg-gray-700 hover:cursor-pointer hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700" tabindex="0">
+                                <label class="hover:cursor-pointer dark:text-white dark:hover:text-white dark:group-hover:text-white" tabindex="0">
                                     Event
                                     <svg class="inline-block w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -136,13 +134,13 @@
 
                                 <div class="mt-1 pl-4 hidden group-hover:block">
                                     <ul>
-                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/demo-day.html">Demo Day</a></li>
-                                        <li class="p-3 rounded-lg dark:hover:text-white text-white bg-blue-700"><a href="/html/gsc-info-session.html">Google Solution Challenge 2023 Info Session</a></li>
-                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/sc-kickoff.html">2023 Solution Challenge Kickoff Event</a></li>
+                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/demo-day.html">Demo Day</a></li>
+                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/gsc-info-session.html">Google Solution Challenge 2023 Info Session</a></li>
+                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/sc-kickoff.html">2023 Solution Challenge Kickoff Event</a></li>
 
                                         <!-- Workshop Menu Dropdown -->
                                         <li>
-                                            <label class="hover:cursor-pointer dark:hover:text-white" tabindex="0">
+                                            <label class="hover:cursor-pointer dark:text-white dark:hover:text-white" tabindex="0">
                                                 Workshops
                                                 <svg class="inline-block w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -151,12 +149,12 @@
 
                                             <div class="mt-1 pl-4 hidden group-hover:block">
                                                 <ul>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/sunway-web-dev.html">Sunway React & Firebase Workshop Series</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/monash-flutter-firebase.html">Monash Flutter & Flask Workshop Series</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/kdu-android.html">KDU Android Workshop</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/um-machine-learning.html">UM Machine Learning Workshop</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/sunway-web-dev.html">Sunway React & Firebase Workshop Series</a></li>
+                                                    <li class="p-3 rounded-lg text-white bg-blue-700 dark:bg-gray-700 dark:text-white dark:hover:text-white"><a href="/monash-flutter-firebase.html">Monash Flutter & Flask Workshop Series</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/kdu-android.html">KDU Android Workshop</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/um-machine-learning.html">UM Machine Learning Workshop</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -175,24 +173,34 @@
         <!-- END of Navbar -->
 
         <!-- Hero -->
-        <div class="container mx-auto my-20 px-10 md:px-20 flex flex-col items-center lg:flex-row dark:text-gray-400">
-            <div class="lg:w-[450px] lg:min-w-[450px]">
-                <a target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-google-solutions-challenge-2023-info-session">
+        <div class="container mx-auto my-20 flex flex-col items-center lg:flex-row dark:text-gray-400 px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-6xl">
+            <div class="lg:w-[450px] lg:min-w-[550px] lg:mt-0">
+                <a target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/monash-university-malaysia/">
                     <h1 class="flex flex-col font-bold text-3xl md:text-5xl dark:text-white">
-                        <span id="hero_title" class="text-transparent text-5xl md:text-6xl xl:text-6xl font-bold tracking-tight mb-6 dark:text-white dark:bg-none">
-                            Google Solution Challenge 2023
+                        <span>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0032FF] to-[#24A0ED]">Flutter</span>
+                            and <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0032FF] to-[#24A0ED]">Flask</span>
                         </span>
                         <span>
-                            Info Session
+                            Workshop Series by <br />Monash University
                             <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
                             </svg>
                         </span>
                     </h1>
+
                 </a>
+                <li class="mt-10 text-lg font-bold hidden lg:flex flex-wrap justify-center lg:flex-col lg:gap-4">
+                    <span>Date: <em>4th & 18th</em> February 2023 (2 days)</span>
+                    <span>⏰ Time: 8:00pm (GMT+8)</span>
+                    <span>📍 Venue: Zoom</span>
+                </li>
+                <button class="lg:mt-8 lg:mb-10 my-10 bg-gradient-to-r from-[#0032FF] to-[#24A0ED] text-white font-semibold py-4 px-6 rounded shadow hover:border-2 border-blue-600 hover:from-white hover:to-white hover:text-[#0032FF] transition duration-300 ease-in-out hover:scale-110 invisible lg:visible">
+                    <a target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/events/details/developer-student-clubs-monash-university-malaysia-presents-integrating-flask-into-your-app/">RSVP Now</a>
+                </button>
             </div>
-            <div class="mt-5 lg:mt-0">
-                <img src="../img/banners/solutionchallenge-2022-chapterevents-banner-lg.png" alt="" class="rounded-md shadow-2xl shadow-gray-900">
+            <div class="mb-12 lg:mb-0">
+                <img src="../img/flutter_flask_logo.png" class="p-8 w-full rounded-lg shadow-2xl" alt="" />
             </div>
         </div>
 
@@ -210,15 +218,9 @@
             </a>
         </div>
 
-        <!-- Event Recordings -->
-        <h1 class="font-bold text-3xl md:text-5xl mt-20 mx-auto mb-6 justify-center text-center dark:text-white">Recordings</h1>
-        <section class="justify-center items-center container mt-8 px-8 mx-auto text-justify max-w-4xl">
-            <iframe src="https://www.youtube.com/embed/rDiwVxerues" class="h-80 lg:h-96 w-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-
         <!-- Countdown -->
         <section class="container mt-32 mb-16 mx-auto h-72 p-7 bg-center bg-no-repeat bg-cover sm:mb-6" style="background-image: url(../img/countdown_background.svg)">
-            <h2 class="text-center pb-4 text-3xl md:text-4xl font-medium text-gray-700 dark:text-white">Days until Info Session</h2>
+            <h2 class="text-center pb-4 text-3xl md:text-4xl font-medium text-gray-700 dark:text-white">Days until Workshop</h2>
             <div class="flex flex-row gap-5 text-center auto-cols-max justify-center">
                 <div class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-red dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center aspect-video p-1 sm:p-4">
                     <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
@@ -248,30 +250,40 @@
         </section>
 
         <!-- Details -->
-        <section class="container my-24 mx-auto flex flex-col items-center lg:flex-row text-gray-700 dark:text-gray-400 px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-5xl">
-            <h1 class="font-bold text-3xl text-center md:text-5xl lg:min-w-[450px] dark:text-white">What is <br> Info Session?</h1>
+        <section class="container my-24 mx-auto flex flex-col items-center lg:flex-row text-gray-700 dark:text-gray-400 px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-7xl">
+            <h1 class="font-bold text-3xl text-center md:text-5xl lg:min-w-[450px] dark:text-white">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0032FF] to-[#24A0ED]">Flutter</span> & <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0032FF] to-[#24A0ED]">Flask</span><br>Workshop Series
+            </h1>
 
             <ul class="flex flex-col gap-3 pt-5 lg:pl-10 lg:mr-12 lg:pt-0 lg:gap-4">
-                <li class="text-justify lg:text-left">
-                    Each year, Google Developer Student Clubs around the world take on the Google Solution Design Challenge and rise to the occasion. The mission of the 2023 Solution Challenge is to solve one or more of the UN 17 Sustainable Development Goals. Join GDSC MUM to take part in this journey in collaboration with other GDSC Chapters around Malaysia!!
+                <li class="text-justify">
+                    💫New year, new skills, new opportunities! 💫
                 </li>
-                <li class="text-justify lg:text-left">
-                    We also have a special upcoming event just to help you on your journey for the Google Solutions Challenge, join us to find out!
+                <li class="text-justify">
+                    Get a headstart on your learning resolutions for 2023 by joining the Flutter and Flask workshop organised by GDSC MUM. 
+                    So what is Flutter and Flask?
                 </li>
-                <li class="text-justify lg:text-left">
-                    Tune into our info sessions to learn more!
+                <li class="text-justify">
+                    Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications
+                    from a single codebase.
                 </li>
-                <br>
-                <li class="flex flex-row flex-wrap gap-3 justify-center lg:flex-col lg:gap-2">
-                    <span>🗓️ Date: 4/1/2023 (Wed)</span>
-                    <span>⏰ Time: 7:00pm - 8:00pm</span>
+                <li class="text-justify">
+                    Flask is an extensible web microframework for building web applications with Python
+                    Curious to learn more? Register Now by RSVP-ing using the button above!
+                </li>
+                <li class="flex flex-col flex-wrap gap-3 justify-center lg:flex-col lg:gap-2">
+                    <span>🗓️ <span class="font-bold">Part 1</span>: Building Your First App with Flutter - <em class="font-bold">February 4th</em></span>
+                    <span>🗓️ <span class="font-bold">Part 2</span>: Integrating Flask into your App - <em class="font-bold">February 18th</em></span>
+                </li>
+                <li class="flex flex-col flex-wrap gap-3 justify-center lg:flex-col lg:gap-2">
+                    <span>⏰ Time: 8:00pm</span>
                     <span>📍 Venue: Zoom</span>
                 </li>
             </ul>
         </section>
 
         <!-- Organisers -->
-        <h1 class="font-bold text-3xl md:text-5xl mt-10 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
+        <h1 class="font-bold text-3xl md:text-5xl mt-20 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
         <section class="w-full flex flex-wrap justify-center items-center pt-10 px-4">
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
@@ -280,7 +292,7 @@
                 <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Russell Kong</p>
                 <p class="text-gray-700 font-normal dark:text-gray-400">GDSC Lead</p>
                 <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
-                    <a target="_blank" href="https://gdsc.community.dev/u/mppxhu/" rel="noopener noreferrer" class="flex flex-row gap-2 items-center">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mppxhu/" class="flex flex-row gap-2 items-center">
                         <span>View Profile</span>
                         <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
@@ -305,15 +317,14 @@
                 </button>
             </div>
 
-
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/zhi_tee.webp" alt="">
+                    <img class="w-full" src="../img/organisers/stella_tee.webp" alt="">
                 </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Zhi Tee</p>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Stella Tee</p>
                 <p class="text-gray-700 font-normal dark:text-gray-400">Operations Lead</p>
                 <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
-                    <a target="_blank" href="https://gdsc.community.dev/u/m9exgy/" rel="noopener noreferrer" class="flex flex-row gap-2 items-center">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m9exgy/" class="flex flex-row gap-2 items-center">
                         <span>View Profile</span>
                         <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
@@ -324,7 +335,7 @@
         </section>
 
         <!-- Sponsor Logo -->
-        <section class="container mt-20 px-5 mx-auto flex flex-col items-center md:px-10 lg:flex-row">
+        <section class="container mt-20 px-5 mx-auto flex flex-col items-center md:px-10 lg:flex-row max-w-7xl">
             <div class="lg:w-[450px]">
                 <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Sponsorships</h1>
                 <p class="mt-5">We are currently seeking sponsors for KitaHack 2023. If you are interested in supporting this event and gaining exposure to a talented group of students and professionals, please get in touch with us to learn more about sponsorship opportunities.</p>

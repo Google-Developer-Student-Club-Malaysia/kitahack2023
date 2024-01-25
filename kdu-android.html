@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -6,36 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../img/icons/dsc_logo.ico" type="image/x-icon">
-        <title>Google Solution Challenge Info Session | KitaHack 2023</title>
+        <title>KDU Android Workshop | KitaHack2023</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--OG-->
+        <meta property="og:title" content="GDSC KitaHack 2023" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://google-developer-student-club-malaysia.github.io/kitahack2023/" />
+        <meta property="og:image" content="/kitahack2023/img/kitahackOG.png" />
+        <meta property="og:description" content="KitaHack 2023, a National Hackathon organized by GDSC Malaysia Powered by Google" />
+        <!--Twitter OG-->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="GDSC KitaHack 2023" />
+        <meta name="twitter:description" content="KitaHack 2023, a National Hackathon organized by GDSC Malaysia Powered by Google" />
+        <meta name="twitter:image" content="/kitahack2023/img/kitahackOG.png" />
 
         <!-- CSS -->
         <link rel="stylesheet" src="../css/style.css">
         <link rel="stylesheet" href="../css/tailwind.css">
-        <style>
-            .banner {
-                background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../img/banners/solutionchallenge-2022-chapterevents-banner-lg.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-
-            .chapter-image {
-                background: url('../img/chapters/GDSC_Monash_University_Horizontal.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-
-        </style>
 
         <!-- JS -->
         <script src="../js/dark-light-switcher.js" defer></script>
         <script src="../js/sponsor-tab-switcher.js" defer></script>
-        <script src="../js/kickoff-event.js"></script>
+        <script src="../js/android-workshop-kdu.js"></script>
     </head>
 
     <body class="bg-white dark:bg-[#2A303C]" onload="darkLightSwitch()">
+        <!-- Pre-Loader -->
+        <div id="preloader"></div>
         <!-- Navbar -->
         <nav class="border-gray-200 px-4 py-2.5 rounded navbar md:px-2">
             <div class="container flex flex-row flex-wrap justify-between mx-auto">
@@ -71,12 +69,12 @@
                     <div class="hidden w-full md:block md:w-auto">
                         <ul class="flex flex-row space-x-8 p-4 font-medium text-sm bg-gray-50 rounded-lg dark:bg-gray-800 md:dark:bg-gray-900">
                             <li>
-                                <a href="/" class="block rounded hover:text-blue-700" aria-current="page">Home</a>
+                                <a href="/" class="block text-gray-700 rounded hover:bg-gray-100 hover:bg-inherit dark:text-gray-400 dark:hover:bg-gray-900 dark:hover:text-white">Home</a>
                             </li>
 
                             <!-- Event Menu Dropdown -->
-                            <li class="dropdown dropdown-bottom dropdown-end block hover:cursor-pointer hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-900" tabindex="0">
-                                <label class="text-blue-700 hover:cursor-pointer dark:text-white" tabindex="0">
+                            <li class="dropdown dropdown-bottom dropdown-end block hover:cursor-pointer hover:bg-gray-100 hover:bg-inherit dark:text-gray-400 dark:hover:bg-gray-900" tabindex="0">
+                                <label class="hover:cursor-pointer text-blue-700 dark:text-white dark:hover:text-white" tabindex="0">
                                     Event
                                     <svg class="inline-block w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -84,26 +82,26 @@
                                 </label>
 
                                 <ul tabindex="0" class="dropdown-content menu bg-white rounded shadow w-44 mt-5 dark:bg-gray-700">
-                                    <li class="dark:hover:text-white"><a href="/html/demo-day.html">Demo Day</a></li>
-                                    <li class="dark:hover:text-white"><a href="/html/gsc-info-session.html">Google Solution Challenge 2023 Info Session</a></li>
-                                    <li><a href="/html/sc-kickoff.html" class="text-blue-700 dark:text-white">2023 Solution Challenge Kickoff Event</a></li>
+                                    <li class="dark:hover:text-white"><a href="/demo-day.html">Demo Day</a></li>
+                                    <li class="dark:hover:text-white"><a href="/gsc-info-session.html">Google Solution Challenge 2023 Info Session</a></li>
+                                    <li class="dark:hover:text-white"><a href="/sc-kickoff.html">2023 Solution Challenge Kickoff Event</a></li>
 
                                     <!-- Workshop Menu Dropdown -->
                                     <li>
                                         <div class="group dropdown dropdown-left hover:cursor-pointer" tabindex="0">
-                                            <label class="hover:cursor-pointer dark:hover:text-white" tabindex="0">
+                                            <label class="hover:cursor-pointer text-blue-700 dark:text-white dark:hover:text-white" tabindex="0">
                                                 Workshops
                                                 <svg class="inline-block w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                                                 </svg>
                                             </label>
                                             <ul id="workshop_toggle" tabindex="0" class="flex-row flex-wrap dropdown-content menu bg-white rounded shadow w-[300px] mt-[-45px] mr-1 duration-100 ease-in hidden dark:bg-gray-700 group-hover:block">
-                                                <li class="dark:hover:text-white"><a href="/html/sunway-web-dev.html">Sunway React & Firebase Workshop Series</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/monash-flutter-firebase.html">Monash Flutter & Flask Workshop Series</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/kdu-android.html">KDU Android Workshop</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/um-machine-learning.html">UM Machine Learning Workshop</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
-                                                <li class="dark:hover:text-white"><a href="/html/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
+                                                <li class="dark:hover:text-white"><a href="/sunway-web-dev.html">Sunway React & Firebase Workshop Series</a></li>
+                                                <li class="dark:hover:text-white"><a href="/monash-flutter-firebase.html">Monash Flutter & Flask Workshop Series</a></li>
+                                                <li class="dark:hover:text-white"><a href="/kdu-android.html" class="text-blue-700 dark:text-white" aria-current="page">KDU Android Workshop</a></li>
+                                                <li class="dark:hover:text-white"><a href="/um-machine-learning.html">UM Machine Learning Workshop</a></li>
+                                                <li class="dark:hover:text-white"><a href="/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
+                                                <li class="dark:hover:text-white"><a href="/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
                                             </ul>
                                         </div>
                                     </li>
@@ -121,13 +119,13 @@
                 <div class="hidden md:hidden w-full" id="navbar-default">
                     <ul class="flex flex-col gap-1 p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
                         <li>
-                            <a href="/" class="block py-2 pl-3 pr-4 rounded md:p-0 dark:text-white dark:bg-gray-700" aria-current="page">Home</a>
+                            <a href="/" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:p-0 dark:text-white dark:bg-gray-700" aria-current="page">Home</a>
                         </li>
 
                         <!-- Event Menu Dropdown -->
                         <li>
-                            <div class="group dropdown dropdown-bottom dropdown-end block py-2 pl-3 pr-4 text-white bg-blue-700 rounded hover:text-black hover:cursor-pointer hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700" tabindex="0">
-                                <label class="hover:cursor-pointer dark:hover:text-black dark:group-hover:text-white" tabindex="0">
+                            <div class="group dropdown dropdown-bottom dropdown-end block py-2 pl-3 pr-4 text-gray-700 rounded hover:cursor-pointer hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700" tabindex="0">
+                                <label class="hover:cursor-pointer dark:hover:text-white dark:group-hover:text-white" tabindex="0">
                                     Event
                                     <svg class="inline-block w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -136,9 +134,9 @@
 
                                 <div class="mt-1 pl-4 hidden group-hover:block">
                                     <ul>
-                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/demo-day.html">Demo Day</a></li>
-                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/gsc-info-session.html">Google Solution Challenge 2023 Info Session</a></li>
-                                        <li class="p-3 rounded-lg dark:hover:text-white text-white bg-blue-700"><a href="/html/sc-kickoff.html">2023 Solution Challenge Kickoff Event</a></li>
+                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/demo-day.html">Demo Day</a></li>
+                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/gsc-info-session.html">Google Solution Challenge 2023 Info Session</a></li>
+                                        <li class="p-3 rounded-lg dark:hover:text-white"><a href="/sc-kickoff.html">2023 Solution Challenge Kickoff Event</a></li>
 
                                         <!-- Workshop Menu Dropdown -->
                                         <li>
@@ -151,12 +149,12 @@
 
                                             <div class="mt-1 pl-4 hidden group-hover:block">
                                                 <ul>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/sunway-web-dev.html">Sunway React & Firebase Workshop Series</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/monash-flutter-firebase.html">Monash Flutter & Flask Workshop Series</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/kdu-android.html">KDU Android Workshop</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/um-machine-learning.html">UM Machine Learning Workshop</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
-                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/html/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/sunway-web-dev.html">Sunway React & Firebase Workshop Series</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/monash-flutter-firebase.html">Monash Flutter & Flask Workshop Series</a></li>
+                                                    <li class="p-3 rounded-lg text-white bg-blue-700 dark:bg-gray-700 dark:text-white dark:hover:text-white" class="text-blue-700 dark:text-white" aria-current="page"><a href="/kdu-android.html">KDU Android Workshop</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/um-machine-learning.html">UM Machine Learning Workshop</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/tarumt-workshop-1.html">TARUMT Build a responsive website using Angular</a></li>
+                                                    <li class="p-3 rounded-lg dark:hover:text-white"><a href="/tarumt-workshop-2.html">TARUMT Build a microservices backend using ASP.NET Core</a></li>
                                                 </ul>
                                             </div>
                                         </li>
@@ -175,26 +173,51 @@
         <!-- END of Navbar -->
 
         <!-- Hero -->
-        <div class="container mx-auto my-20 px-10 md:px-20 flex flex-col items-center lg:flex-row dark:text-gray-400">
-            <div class="lg:w-[450px] lg:min-w-[450px]">
-                <a target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/events/details/developer-student-clubs-gdsc-global-presents-gdsc-solution-challenge-2023-kickoff/">
-                    <h1 class="flex flex-col font-bold text-3xl md:text-5xl dark:text-white">
-                        <span id="hero_title" class="text-transparent text-5xl md:text-6xl xl:text-6xl font-bold tracking-tight mb-6 dark:text-white dark:bg-none">
-                            Google Solution Challenge 2023
-                        </span>
-                        <span>
-                            Kickoff Event
-                            <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
-                            </svg>
-                        </span>
-                    </h1>
-                </a>
+        <!-- Reference: https://tailwind-elements.com/snippets/tailwind/tailwindelements/3578672#html-tab-view -->
+        <section class="mb-40">
+            <div class="px-6 py-12 md:px-12 text-gray-800 text-center lg:text-left dark:text-white">
+                <div class="container mx-auto xl:px-32">
+                    <div class="grid lg:grid-cols-2 gap-12 flex items-center">
+                        <div class="mt-12 lg:mt-0">
+                            <a target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/events/details/developer-student-clubs-uow-malaysia-kdu-penang-university-college-presents-getting-started-with-android-studio/">
+                                <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#78C257] to-[#24A0ED]">Getting Started with Android Studio <br /></h1>
+                                <span class="text-3xl font-bold mb-12">By KDU</span>
+                                <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                                </svg>
+                            </a>
+                            <br />
+
+                            <div class="hidden lg:block lg:mt-10">
+                                <ul class="list_none dark:text-gray-400">
+                                    <li class="text-lg font-bold lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
+                                        <span>🗓️ Date: 6/2/2023 (Monday)</span>
+                                    </li>
+                                    <li class="text-lg font-bold lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
+                                        <span>⏰ Time: 8:00pm - 9:00pm</span>
+
+                                    </li>
+                                    <li class="text-lg font-bold lg:flex flex-col flex-wrap justify-center lg:flex-col lg:gap-4">
+                                        <span>📍 Venue: Zoom</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <a class="inline-flex mt-10" target="_blank" rel="noopener noreferrer" href="https://gdsc.community.dev/events/details/developer-student-clubs-uow-malaysia-kdu-penang-university-college-presents-getting-started-with-android-studio/">
+                                <button class="h-12 hidden lg:flex items-center justify-center uppercase font-semibold px-8 rounded bg-gradient-to-r from-[#78C257] to-[#2dd4bf] shadow-md text-white hover:bg-[#78C257] hover:text-white hover:scale-110 hover:shadow-xl transition duration-500 ease-in-out">
+                                    RSVP Now!
+                                    <button />
+                            </a>
+                        </div>
+                        <div class="lg:mb-0 bg-blue-500 rounded-lg shadow-2xl">
+                            <img src="../img/android_logo_green.png" class="w-full rounded-lg shadow-2xl" alt="" />
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mt-5 lg:mt-0">
-                <img src="../img/sc_kickoff.png" alt="" class="rounded-md shadow-2xl shadow-gray-900">
-            </div>
-        </div>
+        </section>
+        <!-- END of Hero -->
 
         <!-- Chapters -->
         <div class="container mx-auto px-auto flex flex-row flex-wrap gap-4 justify-center">
@@ -202,17 +225,25 @@
                 <source srcset="../img/chapters/GDSC_Malaysia_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
                 <img src="../img/chapters/GDSC_Malaysia_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
             </picture>
-            <a href="https://gdsc.community.dev/monash-university-malaysia/" target="_blank" rel="noopener noreferrer">
-                <picture>
-                    <source srcset="../img/chapters/GDSC_Monash_University_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
-                    <img src="../img/chapters/GDSC_Monash_University_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
-                </picture>
-            </a>
+
+            <picture>
+                <source srcset="../img/chapters/GDSC_KDU_Transparent_Horizontal.png" media="(prefers-color-scheme: dark)">
+                <img src="../img/chapters/GDSC_KDU_Horizontal.png" class="max-w-xs md:max-w-md rounded-md">
+            </picture>
+
         </div>
+
+        <!-- Event Recordings -->
+        <h1 class="font-bold text-3xl md:text-5xl mt-20 mx-auto mb-6 justify-center text-center dark:text-white">Recordings</h1>
+        <section class="justify-center items-center container mt-8 px-8 mx-auto text-justify max-w-4xl">
+            <iframe src="https://www.youtube.com/embed/-FwhBeDb1wM" class="h-80 lg:h-96 w-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
 
         <!-- Countdown -->
         <section class="container mt-32 mb-16 mx-auto h-72 p-7 bg-center bg-no-repeat bg-cover sm:mb-6" style="background-image: url(../img/countdown_background.svg)">
-            <h2 class="text-center pb-4 text-3xl md:text-4xl font-medium text-gray-700 dark:text-white">Days until Info Session</h2>
+            <h2 class="text-center pb-4 text-3xl md:text-4xl font-medium text-gray-700 dark:text-white">Days until
+                Workshop
+            </h2>
             <div class="flex flex-row gap-5 text-center auto-cols-max justify-center">
                 <div class="flex flex-col w-full sm:w-1/4 md:w-1/6 lg:w-1/8 bg-google-red dark:bg-neutral rounded-box text-white dark:text-neutral-content justify-center items-center aspect-video p-1 sm:p-4">
                     <span class="countdown font-bold text-6xl lg:text-7xl dark:text-white">
@@ -240,86 +271,111 @@
                 </div>
             </div>
         </section>
+        <!-- END of Organisers -->
 
         <!-- Details -->
-        <section class="container my-24 mx-auto flex flex-col items-center lg:flex-row text-gray-700 dark:text-gray-400 px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-5xl">
-            <h1 class="font-bold text-3xl text-center md:text-5xl lg:min-w-[450px] dark:text-white">What is <br> Kickoff Event?</h1>
+        <section class="container my-24 mx-auto flex flex-col items-center lg:flex-row text-gray-700 dark:text-gray-400 px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-7xl">
+            <h1 class="font-bold text-3xl text-center md:text-5xl lg:min-w-[550px] dark:text-white">
+                Getting Started with 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#78C257] to-[#24A0ED]">Android Studio</span><br>
+            </h1>
 
             <ul class="flex flex-col gap-3 pt-5 lg:pl-10 lg:mr-12 lg:pt-0 lg:gap-4">
-                <li class="text-justify lg:text-left">
-                    We will provide an overview of the Solution Challenge, the United Nations Sustainable Development Goals, the Google products you can use for your project, and you'll get the chance to network with others.
+                <li class="text-justify">
+                    🚀 Get started with your very own Android app development starter pack 🚀
                 </li>
-                <li class="text-justify lg:text-left">
-                    Join us for the GDSC Solution Challenge Kickoff 2023!
+                <li class="text-justify">
+                    Join us in this workshop to learn the fundamentals of Android app development with Android Studio! 
                 </li>
-                <li class="text-justify lg:text-left">
-                    Check out more information about the 2023 Solution Challenge via <a href="https://developers.google.com/community/gdsc-solution-challenge" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">goo.gle/solutionchallenge</a>.
+                <li class="text-justify">
+                    We'll walk you through <span class="font-bold">creating a new project</span>, <span class="font-bold">understanding the project structure</span>, using the <span class="font-bold">Android Virtual Device Emulator</span>, and
+                    <span class="font-bold">exploring the user interface in an Android development environment.</span>
+                </li>
+                <li class="text-justify">
+                    This workshop is <span class="font-bold">appropriate for beginners</span> and will
+                    provide <span class="font-bold">hands-on lab practice</span> to assist you in getting started with Android app development.
                 </li>
                 <br>
-                <li class="flex flex-row flex-wrap gap-3 justify-center lg:flex-col lg:gap-2">
-                    <span>🗓️ Date: 18/1/2023 (Wed)</span>
-                    <span>⏰ Time: 11:00pm - 12:30am</span>
-                    <span>📍 Venue: Bevy</span>
+                <li class="flex flex-col flex-wrap gap-3 justify-center lg:flex-col lg:gap-2">
+                    <span>🗓️ Date: 6/2/2023 (Monday)</span>
+                    <span>⏰ Time: 8:00pm - 9:00pm</span>
+                    <span>📍 Venue: Zoom</span>
                 </li>
             </ul>
         </section>
 
-        <!-- Speakers -->
-        <h1 class="font-bold text-3xl md:text-5xl mt-10 mx-auto mb-6 justify-center text-center dark:text-white">Speakers</h1>
-        <section class="w-full flex flex-wrap justify-center items-center pt-10 px-4">
-            <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
-                <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/kyle_paul.webp" alt="">
-                </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white mb-1">Kyle Paul</p>
-                <p class="text-gray-700 font-normal dark:text-gray-400 mb-1">Google</p>
-                <p class="text-gray-700 font-normal text-center dark:text-gray-400 mb-4">Core Server Community & <br> Experts Lead</p>
-            </div>
-
-            <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
-                <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/irwin_boutboul.webp" alt="">
-                </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Irwin Boutboul</p>
-                <p class="text-gray-700 font-normal dark:text-gray-400 mb-1">Google</p>
-                <p class="text-gray-700 font-normal text-center dark:text-gray-400 mb-4">Founder, Startups for <br> Sustainable Development</p>
-            </div>
-        </section>
-
         <!-- Organisers -->
-        <h1 class="font-bold text-3xl md:text-5xl mt-10 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
+        <h1 class="font-bold text-3xl md:text-5xl mt-20 mx-auto mb-6 justify-center text-center dark:text-white">Organisers</h1>
         <section class="w-full flex flex-wrap justify-center items-center pt-10 px-4">
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/rachel_francois.webp" alt="">
+                    <img class="w-full" src="../img/organisers/tae_woo_kim_KDU.webp" alt="">
                 </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Rachel Francois</p>
-                <p class="text-gray-700 font-normal dark:text-gray-400 mb-1">Google</p>
-                <p class="text-gray-700 font-normal text-center dark:text-gray-400 mb-10">GDSC Program Manager</p>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Tae Woo Kim</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">GDSC Lead</p>
+                <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m8p6tv/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
             </div>
 
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/eric_hanson.webp" alt="">
+                    <img class="w-full" src="../img/organisers/muhammad_ahmad_ali_KDU.webp" alt="">
                 </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Erica Hanson</p>
-                <p class="text-gray-700 font-normal dark:text-gray-400 mb-1">Google</p>
-                <p class="text-gray-700 font-normal text-center dark:text-gray-400 mb-4">Head of Google Developer <br> Student Clubs</p>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Muhammad Ahmad Ali</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Management Lead</p>
+                <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m43qfc/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
             </div>
-
 
             <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
                 <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
-                    <img class="w-full" src="../img/organisers/jacquelyn_bedard.webp" alt="">
+                    <img class="w-full" src="../img/organisers/GDG-Bevy-DefaultProfile.webp" alt="">
                 </div>
-                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Jacquelyn Bedard</p>
-                <p class="text-gray-700 font-normal dark:text-gray-400 mb-1">Google</p>
-                <p class="text-gray-700 font-normal text-center dark:text-gray-400 mb-10">GDSC Project Manager</p>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Asriel Teh</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">GDSC Co-lead</p>
+                <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/m2a8hy/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
+            </div>
+
+            <div class="relative w-80 p-4 my-14 mx-6 bg-white rounded-lg flex flex-col justify-center items-center shadow-md dark:bg-gray-700">
+                <div class="top-0 left-2/4 overflow-hidden absolute rounded-full w-38 h-38 shadow-xl -translate-x-1/2 -translate-y-1/2">
+                    <img class="w-full" src="../img/organisers/irwan_michael_chan_KDU.webp" alt="">
+                </div>
+                <p class="text-gray-700 mt-20 mb-2 font-bold text-xl dark:text-white">Irwan Michael Chan</p>
+                <p class="text-gray-700 font-normal dark:text-gray-400">Tech Lead</p>
+                <button class="mt-5 mb-2 bg-blue-500 transition ease-in-out delay-50 hover:bg-white text-white hover:text-blue-500 hover:border hover:border-blue-700 font-bold py-2 px-4 rounded dark:hover:bg-gray-700 dark:hover:text-white dark:hover:border-white">
+                    <a target="_blank" href="https://gdsc.community.dev/u/mz8vpp/" class="flex flex-row gap-2 items-center">
+                        <span>View Profile</span>
+                        <svg class="inline-block h-[14px] md:h-[20px]" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+                        </svg>
+                    </a>
+                </button>
             </div>
         </section>
+        <!-- END of Organisers -->
 
+        <!-- Sponsors -->
         <!-- Sponsor Logo -->
-        <section class="container mt-20 px-5 mx-auto flex flex-col items-center md:px-10 lg:flex-row">
+        <section class="container mt-20 mx-auto flex flex-col items-center lg:flex-row px-10 md:px-20 lg:px-8 xl:flex-row text-center lg:text-left max-w-5xl">
             <div class="lg:w-[450px]">
                 <h1 class="font-bold text-3xl md:text-5xl dark:text-white">Sponsorships</h1>
                 <p class="mt-5">We are currently seeking sponsors for KitaHack 2023. If you are interested in supporting this event and gaining exposure to a talented group of students and professionals, please get in touch with us to learn more about sponsorship opportunities.</p>
@@ -447,6 +503,7 @@
                 </div>
             </div>
         </section>
+        <!-- END of Sponsors -->
 
         <!-- Footer -->
         <footer class="p-4 sm:p-6">
